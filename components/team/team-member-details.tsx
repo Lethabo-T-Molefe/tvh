@@ -9,7 +9,7 @@ interface TeamMemberDetailsProps {
 
 export default function TeamMemberDetails({ member }: TeamMemberDetailsProps) {
   const { theme } = useTheme()
-  const isDark = theme === "dark"
+  const isDark = theme === "light"
 
   const cardBg = isDark ? "bg-black/50" : "bg-white/80"
   const cardBorder = isDark ? "border-white/10" : "border-gray-200"
