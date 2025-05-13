@@ -18,7 +18,6 @@ export default function TeamLayout({
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
       <Header />
       {children}
-      <Footer />
     </ThemeProvider>
   )
 }

@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { ChevronDown } from "lucide-react"
 import { useTheme } from "next-themes"
+import { FloatingPaper } from "@/components/floating-paper"
 
 export default function FAQ() {
   const { theme } = useTheme()
@@ -54,12 +55,18 @@ export default function FAQ() {
   }
 
   return (
-    <section id="faq" className="py-20 md:py-32 relative overflow-hidden theme-transition">
+    <section
+      id="faq"
+      className="py-20 md:py-32 relative overflow-hidden theme-transition"
+    >
       {/* Background elements */}
+      
       <div className="absolute inset-0 z-0">
         <div
           className={`absolute top-0 left-0 w-full h-full ${
-            isDark ? "bg-gradient-to-b from-black/95 to-black" : "bg-gradient-to-b from-gray-50 to-white"
+            isDark
+              ? "bg-gradient-to-b from-black/95 to-black"
+              : "bg-gradient-to-b from-gray-50 to-white"
           }`}
         ></div>
         <div
@@ -67,6 +74,11 @@ export default function FAQ() {
             isDark ? "bg-tvh-yellow/10" : "bg-tvh-yellow/5"
           } blur-3xl`}
         ></div>
+      </div>
+
+      {/* Floating papers background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <FloatingPaper count={6} />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -77,11 +89,20 @@ export default function FAQ() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className={`text-3xl md:text-5xl font-bold mb-6 font-heading ${isDark ? "text-white" : "text-gray-800"}`}>
+          <h2
+            className={`text-3xl md:text-5xl font-bold mb-6 font-heading ${
+              isDark ? "text-white" : "text-gray-800"
+            }`}
+          >
             Frequently Asked <span className="gradient-text">Questions</span>
           </h2>
-          <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-            Got questions about TVH? Find answers to the most common queries below.
+          <p
+            className={`text-xl max-w-3xl mx-auto ${
+              isDark ? "text-gray-300" : "text-gray-600"
+            }`}
+          >
+            Got questions about TVH? Find answers to the most common queries
+            below.
           </p>
         </motion.div>
 
@@ -103,13 +124,21 @@ export default function FAQ() {
                       ? "bg-black/70 border-2 border-tvh-yellow/30"
                       : "bg-white shadow-md border-2 border-tvh-yellow/30"
                     : isDark
-                      ? "bg-black/50 border border-white/10 hover:border-white/30"
-                      : "bg-white shadow-sm border border-gray-100 hover:border-gray-200"
+                    ? "bg-black/50 border border-white/10 hover:border-white/30"
+                    : "bg-white shadow-sm border border-gray-100 hover:border-gray-200"
                 }`}
               >
-                <h3 className={`text-lg font-medium ${isDark ? "text-white" : "text-gray-800"}`}>{faq.question}</h3>
+                <h3
+                  className={`text-lg font-medium ${
+                    isDark ? "text-white" : "text-gray-800"
+                  }`}
+                >
+                  {faq.question}
+                </h3>
                 <ChevronDown
-                  className={`h-5 w-5 ${isDark ? "text-gray-400" : "text-gray-500"} transition-transform ${
+                  className={`h-5 w-5 ${
+                    isDark ? "text-gray-400" : "text-gray-500"
+                  } transition-transform ${
                     activeIndex === index ? "transform rotate-180" : ""
                   }`}
                 />
@@ -123,7 +152,9 @@ export default function FAQ() {
                   transition={{ duration: 0.3 }}
                   className="p-6 mt-2 rounded-xl bg-gray-50 dark:bg-black/50"
                 >
-                  <p className={`text-gray-700 dark:text-gray-300`}>{faq.answer}</p>
+                  <p className={`text-gray-700 dark:text-gray-300`}>
+                    {faq.answer}
+                  </p>
                 </motion.div>
               )}
             </motion.div>
@@ -131,5 +162,5 @@ export default function FAQ() {
         </div>
       </div>
     </section>
-  )
+  );
 }

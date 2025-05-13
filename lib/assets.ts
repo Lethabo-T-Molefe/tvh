@@ -2,8 +2,8 @@
 export const assets = {
   // Logos
   logos: {
-    main: "/images/tvh-logo.svg",
-    light: "/images/tvh-logo-light.svg",
+    main: "/assets/img/slide/slide-1_1.png",
+    light: "/assets/img/slide/slide-1_1.png",
     dark: "/images/tvh-logo-dark.svg",
     icon: "/images/tvh-icon.svg",
   },
@@ -64,7 +64,7 @@ export const assets = {
     wide: "/placeholder.svg?height=400&width=800",
     square: "/placeholder.svg?height=400&width=400",
   },
-}
+};
 
 // Placeholder function to use until real images are available
 export function getPlaceholder(width: number, height: number): string {

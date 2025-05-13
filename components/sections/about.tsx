@@ -13,20 +13,23 @@ export default function About() {
   const features = [
     {
       icon: <Lightbulb className="h-8 w-8 text-tvh-yellow" />,
-      title: "Ideation",
-      description: "Brainstorm innovative solutions to real-world problems with your team.",
+      title: "Free Entry",
+      description:
+        "The tshwane varsity hackathon is open to all students and other respective universities no entry/ registration fee.",
     },
     {
       icon: <Users className="h-8 w-8 text-tvh-blue" />,
-      title: "Collaboration",
-      description: "Work with talented students from universities across South Africa.",
+      title: "Organising Team",
+      description:
+        "The individuals involved in the organising and execution of the tswane varsity hackathon.Consisting of the lead organising team industry volunteers and the organising team.",
     },
     {
       icon: <Code className="h-8 w-8 text-tvh-red" />,
-      title: "Development",
-      description: "Turn your ideas into working prototypes with cutting-edge technology.",
+      title: "Rules & Regulations",
+      description:
+        "Turn your ideas into working prototypes with cutting-edge technology.",
     },
-  ]
+  ];
 
   const bgGradient = isDark ? "bg-gradient-to-b from-black to-black/95" : "bg-gradient-to-b from-white to-gray-50"
   const textColor = isDark ? "text-white" : "text-gray-900"
@@ -42,7 +45,9 @@ export default function About() {
     <section id="about" className="py-20 md:py-32 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
-        <div className={`absolute top-0 left-0 w-full h-full ${bgGradient}`}></div>
+        <div
+          className={`absolute top-0 left-0 w-full h-full ${bgGradient}`}
+        ></div>
         <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full bg-tvh-yellow/10 blur-3xl"></div>
       </div>
 
@@ -54,12 +59,15 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className={`text-3xl md:text-5xl font-bold mb-6 font-heading ${textColor}`}>
+          <h2
+            className={`text-3xl md:text-5xl font-bold mb-6 font-heading ${textColor}`}
+          >
             About <span className="gradient-text">TVH</span>
           </h2>
           <p className={`text-xl ${mutedTextColor} max-w-3xl mx-auto`}>
-            The Varsity Hackathon brings together the brightest minds from universities across South Africa for 48 hours
-            of innovation, coding, and fun.
+            The Tshwane Varsity Hackathon brings together the brightest minds from
+            universities across Tshwane for 53 hours of innovation, coding,
+            and fun.
           </p>
         </motion.div>
 
@@ -73,7 +81,7 @@ export default function About() {
           >
             <div className="relative h-[400px] w-full overflow-hidden rounded-xl gradient-border">
               <Image
-                src={assets.placeholders.wide || "/placeholder.svg"}
+                src={"/assets/img/slide/PTA2.jpg"}
                 alt="TVH Hackathon Event"
                 fill
                 className="object-cover"
@@ -93,7 +101,9 @@ export default function About() {
                 </div>
                 <div>
                   <p className={`${textColor} font-bold text-xl`}>500+</p>
-                  <p className={isDark ? "text-gray-400" : "text-gray-500"}>Participants</p>
+                  <p className={isDark ? "text-gray-400" : "text-gray-500"}>
+                    Participants
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -106,19 +116,36 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h3 className={`text-2xl md:text-3xl font-bold mb-6 ${textColor}`}>
-              South Africa's Premier Inter-University Hackathon
+              What The Hack?
             </h3>
             <p className={`${mutedTextColor} mb-6`}>
-              The Varsity Hackathon (TVH) is an annual competition that brings together students from universities
-              across South Africa to solve real-world problems through technology.
+              TVH is an annual hacking competition that was introduced in 2018
+              by its chief organizer Mr Mash Phurutsi. TVH is a tshwane
+              university of technology hackathon competition organized by the
+              faculty of ICT & directorate of research & innovation in
+              partnership with the industry in support of, the national
+              development plan (Vision 2030) of the Government of the Republic
+              of South Africa by addressing chapter 9 of the plan that focuses
+              on “Improving Education, Training and Innovation”. TVH is further
+              aligned to TUT 2020 – 2025 strategic positioning on the ambitions
+              to become a digitally-advanced university.
             </p>
             <p className={`${mutedTextColor} mb-6`}>
-              Participants form teams and have 48 hours to ideate, design, and develop innovative solutions. The event
-              features workshops, mentorship sessions, and networking opportunities with industry professionals.
+              TVH is an annual hacking competition that was introduced in 2018
+              by its chief organizer Mr Mash Phurutsi. TVH is a tshwane
+              university of technology hackathon competition organized by the
+              faculty of ICT & directorate of research & innovation in
+              partnership with the industry in support of, the national
+              development plan (Vision 2030) of the Government of the Republic
+              of South Africa by addressing chapter 9 of the plan that focuses
+              on “Improving Education, Training and Innovation”. TVH is further
+              aligned to TUT 2020 – 2025 strategic positioning on the ambitions
+              to become a digitally-advanced university.
             </p>
             <p className={mutedTextColor}>
-              With over R100,000 in prizes, TVH offers students a platform to showcase their skills, gain practical
-              experience, and potentially launch their careers in tech.
+              The TVH will use a hackathon format, underpinned by Agile Scrum
+              and AWS cloud computing practices, to deliver fresh ideas and
+              solutions that catalyzes 4IR in the african continent.
             </p>
           </motion.div>
         </div>
@@ -133,15 +160,21 @@ export default function About() {
               viewport={{ once: true }}
               className={`${cardBg} backdrop-blur-sm p-6 rounded-xl border ${cardBorder} ${cardHoverBorder} transition-all group`}
             >
-              <div className={`${iconBg} p-4 rounded-lg inline-block mb-4 group-hover:scale-110 transition-transform`}>
+              <div
+                className={`${iconBg} p-4 rounded-lg inline-block mb-4 group-hover:scale-110 transition-transform`}
+              >
                 {feature.icon}
               </div>
-              <h3 className={`text-xl font-bold mb-3 ${textColor}`}>{feature.title}</h3>
-              <p className={isDark ? "text-gray-400" : "text-gray-600"}>{feature.description}</p>
+              <h3 className={`text-xl font-bold mb-3 ${textColor}`}>
+                {feature.title}
+              </h3>
+              <p className={isDark ? "text-gray-400" : "text-gray-600"}>
+                {feature.description}
+              </p>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

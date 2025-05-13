@@ -12,27 +12,18 @@ export default function Sponsors() {
 
   const sponsorTiers = [
     {
-      tier: "Platinum Sponsors",
+      tier: "Partners",
       sponsors: [
         { name: "Sponsor 1", logo: assets.placeholders.logo },
         { name: "Sponsor 2", logo: assets.placeholders.logo },
       ],
     },
     {
-      tier: "Gold Sponsors",
+      tier: "Sponsors",
       sponsors: [
         { name: "Sponsor 3", logo: assets.placeholders.logo },
         { name: "Sponsor 4", logo: assets.placeholders.logo },
         { name: "Sponsor 5", logo: assets.placeholders.logo },
-      ],
-    },
-    {
-      tier: "Silver Sponsors",
-      sponsors: [
-        { name: "Sponsor 6", logo: assets.placeholders.logo },
-        { name: "Sponsor 7", logo: assets.placeholders.logo },
-        { name: "Sponsor 8", logo: assets.placeholders.logo },
-        { name: "Sponsor 9", logo: assets.placeholders.logo },
       ],
     },
   ]

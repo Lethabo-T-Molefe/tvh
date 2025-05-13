@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Calendar, Clock, MapPin } from "lucide-react"
 import { useTheme } from "next-themes"
+import { FloatingPaper } from "@/components/floating-paper";
 
 export default function Timeline() {
   const { theme } = useTheme()
@@ -56,16 +57,23 @@ export default function Timeline() {
   const cardBorder = isDark ? "border-white/10" : "border-gray-200"
 
   return (
-    <section id="timeline" className="py-20 md:py-32 relative overflow-hidden theme-transition">
+    <section
+      id="timeline"
+      className="py-20 md:py-32 relative overflow-hidden theme-transition"
+    >
+      
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
-        <div className={`absolute top-0 left-0 w-full h-full ${bgGradient}`}></div>
+        <div
+          className={`absolute top-0 left-0 w-full h-full ${bgGradient}`}
+        ></div>
         <div
           className={`absolute bottom-1/4 left-0 w-96 h-96 rounded-full ${
             isDark ? "bg-tvh-blue/10" : "bg-tvh-blue/5"
           } blur-3xl`}
         ></div>
       </div>
+      
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -75,11 +83,14 @@ export default function Timeline() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className={`text-3xl md:text-5xl font-bold mb-6 font-heading ${textColor}`}>
+          <h2
+            className={`text-3xl md:text-5xl font-bold mb-6 font-heading ${textColor}`}
+          >
             Event <span className="gradient-text">Timeline</span>
           </h2>
           <p className={`text-xl ${mutedTextColor} max-w-3xl mx-auto`}>
-            Your guide to the 48-hour hackathon journey. From kickoff to awards, here's what to expect.
+            Your guide to the 48-hour hackathon journey. From kickoff to awards,
+            here's what to expect.
           </p>
         </motion.div>
 
@@ -98,12 +109,18 @@ export default function Timeline() {
                   dayIndex === 0
                     ? "bg-tvh-red/20 border-b border-tvh-red/30"
                     : dayIndex === 1
-                      ? "bg-tvh-yellow/10 border-b border-tvh-yellow/30"
-                      : "bg-tvh-blue/20 border-b border-tvh-blue/30"
+                    ? "bg-tvh-yellow/10 border-b border-tvh-yellow/30"
+                    : "bg-tvh-blue/20 border-b border-tvh-blue/30"
                 }`}
               >
-                <h3 className={`text-2xl font-bold ${textColor} mb-2`}>{day.day}</h3>
-                <div className={`flex items-center ${isDark ? "text-gray-300" : "text-gray-600"}`}>
+                <h3 className={`text-2xl font-bold ${textColor} mb-2`}>
+                  {day.day}
+                </h3>
+                <div
+                  className={`flex items-center ${
+                    isDark ? "text-gray-300" : "text-gray-600"
+                  }`}
+                >
                   <Calendar className="h-4 w-4 mr-2" />
                   <span>{day.date}</span>
                 </div>
@@ -116,7 +133,10 @@ export default function Timeline() {
                       key={event.title}
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.3, delay: 0.1 + eventIndex * 0.05 }}
+                      transition={{
+                        duration: 0.3,
+                        delay: 0.1 + eventIndex * 0.05,
+                      }}
                       viewport={{ once: true }}
                       className={`relative pl-6 border-l-2 ${
                         isDark ? "border-gray-700" : "border-gray-300"
@@ -127,12 +147,22 @@ export default function Timeline() {
                           isDark ? "bg-gray-700" : "bg-gray-300"
                         } group-hover:bg-tvh-yellow`}
                       ></div>
-                      <p className={`${isDark ? "text-gray-400" : "text-gray-500"} flex items-center mb-1`}>
+                      <p
+                        className={`${
+                          isDark ? "text-gray-400" : "text-gray-500"
+                        } flex items-center mb-1`}
+                      >
                         <Clock className="h-3 w-3 mr-1" />
                         <span className="text-sm">{event.time}</span>
                       </p>
-                      <h4 className={`${textColor} font-medium mb-1`}>{event.title}</h4>
-                      <p className={`${isDark ? "text-gray-400" : "text-gray-500"} text-sm flex items-center`}>
+                      <h4 className={`${textColor} font-medium mb-1`}>
+                        {event.title}
+                      </h4>
+                      <p
+                        className={`${
+                          isDark ? "text-gray-400" : "text-gray-500"
+                        } text-sm flex items-center`}
+                      >
                         <MapPin className="h-3 w-3 mr-1" />
                         {event.location}
                       </p>
@@ -145,5 +175,5 @@ export default function Timeline() {
         </div>
       </div>
     </section>
-  )
+  );
 }

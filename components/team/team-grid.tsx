@@ -28,15 +28,15 @@ export default function TeamGrid() {
 
   // Sort departments by priority
   const departmentOrder = [
-    "Leadership",
-    "Operations",
-    "Technology",
+    "Executive organizing Team",
+    "Lead organizing Team",
+    "General organizing Team",
     "Design",
     "Marketing",
     "Sponsorships",
     "Logistics",
     "Volunteers",
-  ]
+  ];
 
   return (
     <div>

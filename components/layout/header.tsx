@@ -88,13 +88,7 @@ export default function Header() {
               </Link>
             </motion.div>
           ))}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <Button className="ml-4 bg-tvh-red hover:bg-tvh-red/80 text-white font-medium">Register Now</Button>
-          </motion.div>
+          
           <ThemeToggle />
         </nav>
 

@@ -6,6 +6,7 @@ import { assets } from "@/lib/assets"
 import { ArrowRight, Calendar, MapPin } from "lucide-react"
 import CountdownTimer from "@/components/ui/countdown-timer"
 import { useTheme } from "next-themes"
+import { FloatingPaper } from "@/components/floating-paper";
 
 export default function Hero() {
   // Set the hackathon date (example: October 15, 2024)
@@ -27,6 +28,7 @@ export default function Hero() {
         <div className="absolute top-20 left-0 w-96 h-96 rounded-full bg-tvh-red/20 blur-3xl"></div>
         <div className="absolute bottom-20 right-0 w-96 h-96 rounded-full bg-tvh-blue/20 blur-3xl"></div>
       </div>
+      
 
       <div className="container mx-auto px-4 relative z-10 pt-16 md:pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -112,7 +114,7 @@ export default function Hero() {
           >
             <div className="relative h-[400px] w-full">
               <Image
-                src={assets.placeholders.wide || "/placeholder.svg"}
+                src={"/assets/img/portfolio/19_2.jpg"}
                 alt="TVH Hackathon"
                 fill
                 className="object-contain"
