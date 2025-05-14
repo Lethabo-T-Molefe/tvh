@@ -104,10 +104,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a pull request
 
-## License
-
-This project is currently unlicensed. Please contact the repository owner for licensing information if you wish to use or contribute to this project.
-
----
-
-Let me know if you want to customize any section or add more details!
