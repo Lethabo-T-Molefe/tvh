@@ -23,8 +23,8 @@ export default function Home() {
         
         <Hero />
         <About />
-        <Timeline />
         <Announcements />
+        <Timeline />
         <Sponsors />
         <FAQ />
         <Contact />

@@ -32,10 +32,8 @@ export default function Hero() {
       
 
       <div className="container mx-auto px-4 relative z-10 pt-16 md:pt-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-          <FlickeringGrid
-        className="z-0 absolute inset-0 size-full"
+      <FlickeringGrid
+        className="z-0 absolute inset-0 size-full" 
         squareSize={4}
         gridGap={6}
         color="#6B7280"
@@ -44,8 +42,8 @@ export default function Hero() {
         height={550}
         width={2000}
       />
-            
-
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
