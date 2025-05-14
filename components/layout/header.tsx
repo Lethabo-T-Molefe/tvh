@@ -29,7 +29,7 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "About", href: "/#about" },
     { name: "Timeline", href: "/#timeline" },
-    { name: "Gallery", href: "/gallery" },
+    { name: "Gallery", href: "/" },
     { name: "Team", href: "/team" },
     { name: "Announcements", href: "/#announcements" },
     { name: "Sponsors", href: "/#sponsors" },

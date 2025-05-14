@@ -16,12 +16,6 @@ export default function TeamMemberModal({ member, onClose }: TeamMemberModalProp
   const { theme } = useTheme()
   const isDark = theme === "dark"
 
-  const modalBg = isDark ? "bg-black/90" : "bg-white/90"
-  const cardBg = isDark ? "bg-black/50" : "bg-white/80"
-  const cardBorder = isDark ? "border-white/10" : "border-gray-200"
-  const textColor = isDark ? "text-white" : "text-gray-900"
-  const mutedTextColor = isDark ? "text-gray-300" : "text-gray-600"
-
   if (!member) return null
 
   return (
@@ -30,17 +24,25 @@ export default function TeamMemberModal({ member, onClose }: TeamMemberModalProp
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
         className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
         onClick={onClose}
       >
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.95, y: 20 }}
           transition={{ type: "spring", damping: 25, stiffness: 300 }}
-          className={`relative max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-xl ${modalBg} backdrop-blur-md ${cardBorder} border shadow-xl`}
+          className={`relative max-w-3xl w-full max-h-[85vh] overflow-hidden rounded-2xl ${
+            isDark ? "bg-gradient-to-br from-black to-gray-900/90" : "bg-gradient-to-br from-white to-gray-50/95"
+          } backdrop-blur-md border ${isDark ? "border-white/10" : "border-gray-200"} shadow-xl`}
           onClick={(e) => e.stopPropagation()}
         >
+          {/* Decorative elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-tvh-red/10 blur-3xl -z-10"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-tvh-blue/10 blur-3xl -z-10"></div>
+
+          {/* Close button */}
           <button
             className="absolute top-4 right-4 z-10 bg-black/20 text-white rounded-full p-2 hover:bg-black/40 transition-colors"
             onClick={onClose}
@@ -48,109 +50,205 @@ export default function TeamMemberModal({ member, onClose }: TeamMemberModalProp
             <X size={20} />
           </button>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
-            <div className="relative h-80 md:h-full rounded-lg overflow-hidden">
-              <Image
-                src={member.image || "/placeholder.svg?height=400&width=400&text=Team+Member"}
-                alt={member.name}
-                fill
-                className="object-cover"
-              />
+          <div className="overflow-y-auto max-h-[85vh] no-scrollbar">
+            {/* Header with image and basic info */}
+            <div className="relative">
+              {/* Background header image - blurred version of profile pic */}
+              <div className="absolute inset-0 h-40 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"></div>
+                <Image
+                  src={member.image || "/placeholder.svg?height=400&width=400&text=Team+Member"}
+                  alt=""
+                  fill
+                  className="object-cover blur-md scale-110 opacity-50"
+                />
+              </div>
+
+              <div className="relative z-10 pt-6 px-6 pb-0 flex flex-col md:flex-row items-center md:items-end gap-4">
+                {/* Profile image */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 }}
+                  className="relative h-28 w-28 rounded-full overflow-hidden border-4 border-white shadow-lg"
+                >
+                  <Image
+                    src={member.image || "/placeholder.svg?height=400&width=400&text=Team+Member"}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
+                </motion.div>
+
+                {/* Name and title */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                  className="text-center md:text-left pb-4"
+                >
+                  <h2 className="text-2xl font-bold text-white">{member.name}</h2>
+                  <p className="text-gray-300 text-lg">{member.title}</p>
+                </motion.div>
+              </div>
             </div>
 
-            <div>
-              <h2 className={`text-3xl font-bold mb-2 ${textColor}`}>{member.name}</h2>
-              <p className={`text-xl ${mutedTextColor} mb-4`}>{member.title}</p>
+            {/* Content */}
+            <div className="p-6">
+              {/* Department and location */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="flex flex-wrap items-center gap-4 mb-6 text-sm"
+              >
+                <div
+                  className={`flex items-center px-3 py-1.5 rounded-full ${
+                    isDark ? "bg-tvh-red/20 text-tvh-red" : "bg-tvh-red/10 text-tvh-red"
+                  }`}
+                >
+                  <Briefcase className="h-4 w-4 mr-1.5" />
+                  <span>{member.department}</span>
+                </div>
 
-              <div className="flex items-center mb-6">
-                <Briefcase className={`h-5 w-5 ${mutedTextColor} mr-2`} />
-                <span className={mutedTextColor}>{member.department}</span>
                 {member.location && (
-                  <>
-                    <span className={`mx-2 ${mutedTextColor}`}>•</span>
-                    <MapPin className={`h-5 w-5 ${mutedTextColor} mr-2`} />
-                    <span className={mutedTextColor}>{member.location}</span>
-                  </>
+                  <div
+                    className={`flex items-center px-3 py-1.5 rounded-full ${
+                      isDark ? "bg-tvh-blue/20 text-tvh-blue" : "bg-tvh-blue/10 text-tvh-blue"
+                    }`}
+                  >
+                    <MapPin className="h-4 w-4 mr-1.5" />
+                    <span>{member.location}</span>
+                  </div>
                 )}
-              </div>
+              </motion.div>
 
-              <div className={`space-y-4 ${mutedTextColor} mb-6`}>
+              {/* Bio */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className={`space-y-3 mb-6 ${isDark ? "text-gray-300" : "text-gray-600"}`}
+              >
                 {member.bio.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
+                  <p key={i} className="text-sm leading-relaxed">
+                    {paragraph}
+                  </p>
                 ))}
-              </div>
+              </motion.div>
 
+              {/* Skills */}
               {member.skills && member.skills.length > 0 && (
-                <div className="mb-6">
-                  <h3 className={`text-lg font-bold mb-3 ${textColor}`}>Skills & Expertise</h3>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="mb-6"
+                >
+                  <h3 className={`text-sm font-semibold mb-3 ${isDark ? "text-gray-200" : "text-gray-700"}`}>
+                    Skills & Expertise
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {member.skills.map((skill, i) => (
                       <span
                         key={i}
-                        className={`px-3 py-1 rounded-full text-sm ${
+                        className={`px-2.5 py-1 rounded-full text-xs ${
                           isDark
-                            ? "bg-tvh-blue/20 text-tvh-blue border border-tvh-blue/30"
-                            : "bg-tvh-blue/10 text-tvh-blue border border-tvh-blue/20"
+                            ? "bg-tvh-yellow/20 text-tvh-yellow border border-tvh-yellow/30"
+                            : "bg-tvh-yellow/10 text-tvh-yellow/90 border border-tvh-yellow/20"
                         }`}
                       >
                         {skill}
                       </span>
                     ))}
                   </div>
-                </div>
+                </motion.div>
               )}
 
-              <div className="flex flex-wrap gap-3">
+              {/* Contact links */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+                className="flex flex-wrap gap-2"
+              >
                 {member.email && (
-                  <Button
-                    variant="outline"
-                    className={`${isDark ? "border-white/20 hover:bg-white/10" : "border-gray-300 hover:bg-gray-100"}`}
-                    asChild
+                  <a
+                    href={`mailto:${member.email}`}
+                    className={`flex items-center px-3 py-1.5 rounded-md text-sm ${
+                      isDark ? "bg-black/30 text-white hover:bg-black/50" : "bg-white text-gray-700 hover:bg-gray-100"
+                    } border ${isDark ? "border-white/10" : "border-gray-200"} transition-colors`}
                   >
-                    <a href={`mailto:${member.email}`}>
-                      <Mail className="mr-2 h-4 w-4" />
-                      Email
-                    </a>
-                  </Button>
+                    <Mail className="mr-1.5 h-3.5 w-3.5" />
+                    Email
+                  </a>
                 )}
+
                 {member.linkedin && (
-                  <Button
-                    variant="outline"
-                    className={`${isDark ? "border-white/20 hover:bg-white/10" : "border-gray-300 hover:bg-gray-100"}`}
-                    asChild
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center px-3 py-1.5 rounded-md text-sm ${
+                      isDark ? "bg-black/30 text-white hover:bg-black/50" : "bg-white text-gray-700 hover:bg-gray-100"
+                    } border ${isDark ? "border-white/10" : "border-gray-200"} transition-colors`}
                   >
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                      <Linkedin className="mr-2 h-4 w-4" />
-                      LinkedIn
-                    </a>
-                  </Button>
+                    <Linkedin className="mr-1.5 h-3.5 w-3.5" />
+                    LinkedIn
+                  </a>
                 )}
+
                 {member.twitter && (
-                  <Button
-                    variant="outline"
-                    className={`${isDark ? "border-white/20 hover:bg-white/10" : "border-gray-300 hover:bg-gray-100"}`}
-                    asChild
+                  <a
+                    href={member.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center px-3 py-1.5 rounded-md text-sm ${
+                      isDark ? "bg-black/30 text-white hover:bg-black/50" : "bg-white text-gray-700 hover:bg-gray-100"
+                    } border ${isDark ? "border-white/10" : "border-gray-200"} transition-colors`}
                   >
-                    <a href={member.twitter} target="_blank" rel="noopener noreferrer">
-                      <Twitter className="mr-2 h-4 w-4" />
-                      Twitter
-                    </a>
-                  </Button>
+                    <Twitter className="mr-1.5 h-3.5 w-3.5" />
+                    Twitter
+                  </a>
                 )}
+
                 {member.website && (
-                  <Button
-                    variant="outline"
-                    className={`${isDark ? "border-white/20 hover:bg-white/10" : "border-gray-300 hover:bg-gray-100"}`}
-                    asChild
+                  <a
+                    href={member.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center px-3 py-1.5 rounded-md text-sm ${
+                      isDark ? "bg-black/30 text-white hover:bg-black/50" : "bg-white text-gray-700 hover:bg-gray-100"
+                    } border ${isDark ? "border-white/10" : "border-gray-200"} transition-colors`}
                   >
-                    <a href={member.website} target="_blank" rel="noopener noreferrer">
-                      <Globe className="mr-2 h-4 w-4" />
-                      Website
-                    </a>
-                  </Button>
+                    <Globe className="mr-1.5 h-3.5 w-3.5" />
+                    Website
+                  </a>
                 )}
-              </div>
+              </motion.div>
             </div>
+
+            {/* Footer */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
+              className={`p-4 border-t ${
+                isDark ? "border-white/10" : "border-gray-200"
+              } flex justify-between items-center`}
+            >
+              <p className={`text-xs ${isDark ? "text-gray-400" : "text-gray-500"}`}>
+                Part of the {member.department} Team
+              </p>
+
+              <Button
+                size="sm"
+                className="bg-tvh-blue hover:bg-tvh-blue/80 text-white text-xs h-8 px-3"
+                onClick={onClose}
+              >
+                Close
+              </Button>
+            </motion.div>
           </div>
         </motion.div>
       </motion.div>

@@ -14,16 +14,23 @@ export default function Sponsors() {
     {
       tier: "Partners",
       sponsors: [
-        { name: "Sponsor 1", logo: assets.placeholders.logo },
-        { name: "Sponsor 2", logo: assets.placeholders.logo },
+        { name: "TUT", logo: "https://tvh.icep.co.za/assets/img/clients/logo2.png" },
+        { name: "Sponsor 2", logo: "https://tvh.icep.co.za/assets/img/clients/624-In-partnership-CoT-01.png"},
+        { name: "SMU", logo: "https://tvh.icep.co.za/assets/img/clients/smu.png"},
+        {name: "UP", logo: "https://tvh.icep.co.za/assets/img/clients/up.webp"},
       ],
     },
     {
       tier: "Sponsors",
       sponsors: [
-        { name: "Sponsor 3", logo: assets.placeholders.logo },
-        { name: "Sponsor 4", logo: assets.placeholders.logo },
-        { name: "Sponsor 5", logo: assets.placeholders.logo },
+        { name: "AWS", logo: "https://tvh.icep.co.za/assets/img/clients/aws.png" },
+        { name: "nelekat", logo: "https://tvh.icep.co.za/assets/img/clients/nele.png" },
+        { name: "Switch Energy", logo: "https://tvh.icep.co.za/assets/img/clients/SWITCH-LOGO.png" },
+        { name: "Dizzy", logo: "https://tvh.icep.co.za/assets/img/clients/dizzy.png" },
+        { name: "IQBusiness", logo: "https://tvh.icep.co.za/assets/img/clients/iq.png" },
+        { name: "faethm", logo: "https://tvh.icep.co.za/assets/img/clients/faethm.png" },
+        { name: "thinktank", logo: "https://tvh.icep.co.za/assets/img/clients/thinktank.png" },
+        { name: "rs", logo: "https://tvh.icep.co.za/assets/img/clients/RS.png"}
       ],
     },
   ]

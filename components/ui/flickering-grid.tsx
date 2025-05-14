@@ -13,7 +13,7 @@ interface FlickeringGridProps {
   gridGap?: number;
   flickerChance?: number;
   color?: string;
-  width?: number;
+  width?: number ;
   height?: number;
   className?: string;
 

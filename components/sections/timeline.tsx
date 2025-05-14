@@ -3,7 +3,8 @@
 import { motion } from "framer-motion"
 import { Calendar, Clock, MapPin } from "lucide-react"
 import { useTheme } from "next-themes"
-import { FloatingPaper } from "@/components/floating-paper";
+import { FloatingPaper } from "@/components/floating-paper"
+import { FlickeringGrid } from "../ui/flickering-grid"
 
 export default function Timeline() {
   const { theme } = useTheme()
@@ -12,7 +13,7 @@ export default function Timeline() {
   const timelineEvents = [
     {
       day: "Day 1",
-      date: "October 15, 2024",
+      date: "October 18, 2024",
       events: [
         { time: "08:00 - 09:00", title: "Registration & Check-in", location: "Main Hall" },
         { time: "09:30 - 10:30", title: "Opening Ceremony", location: "Auditorium" },
@@ -20,12 +21,12 @@ export default function Timeline() {
         { time: "12:00 - 13:00", title: "Lunch Break", location: "Dining Area" },
         { time: "13:00 - 18:00", title: "Hacking Begins", location: "Hacking Zones" },
         { time: "18:00 - 19:00", title: "Dinner", location: "Dining Area" },
-        { time: "19:00 - 21:00", title: "Workshop: AI Integration", location: "Workshop Room A" },
+        { time: "19:00 - 21:00", title: "Workshop ", location: "Workshop Room A" },
       ],
     },
     {
       day: "Day 2",
-      date: "October 16, 2024",
+      date: "October 19, 2024",
       events: [
         { time: "08:00 - 09:00", title: "Breakfast", location: "Dining Area" },
         { time: "09:00 - 12:00", title: "Hacking Continues", location: "Hacking Zones" },
@@ -37,7 +38,7 @@ export default function Timeline() {
     },
     {
       day: "Day 3",
-      date: "October 17, 2024",
+      date: "October 20, 2024",
       events: [
         { time: "08:00 - 09:00", title: "Breakfast", location: "Dining Area" },
         { time: "09:00 - 12:00", title: "Final Hacking Hours", location: "Hacking Zones" },
@@ -72,7 +73,7 @@ export default function Timeline() {
             isDark ? "bg-tvh-blue/10" : "bg-tvh-blue/5"
           } blur-3xl`}
         ></div>
-      </div>
+      </div> 
       
 
       <div className="container mx-auto px-4 relative z-10">
@@ -89,12 +90,13 @@ export default function Timeline() {
             Event <span className="gradient-text">Timeline</span>
           </h2>
           <p className={`text-xl ${mutedTextColor} max-w-3xl mx-auto`}>
-            Your guide to the 48-hour hackathon journey. From kickoff to awards,
+            Your guide to the 52-hour hackathon journey. From kickoff to awards,
             here's what to expect.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+         
           {timelineEvents.map((day, dayIndex) => (
             <motion.div
               key={day.day}
@@ -172,8 +174,8 @@ export default function Timeline() {
               </div>
             </motion.div>
           ))}
-        </div>
-      </div>
+        </div> 
+      </div> 
     </section>
   );
 }

@@ -7,10 +7,11 @@ import { ArrowRight, Calendar, MapPin } from "lucide-react"
 import CountdownTimer from "@/components/ui/countdown-timer"
 import { useTheme } from "next-themes"
 import { FloatingPaper } from "@/components/floating-paper";
+import { FlickeringGrid } from "../ui/flickering-grid"
 
 export default function Hero() {
   // Set the hackathon date (example: October 15, 2024)
-  const hackathonDate = new Date("2025-10-15T09:00:00")
+  const hackathonDate = new Date("2025-09-21T09:00:00")
   const { theme } = useTheme()
   const isDark = theme === "dark"
 
@@ -33,16 +34,17 @@ export default function Hero() {
       <div className="container mx-auto px-4 relative z-10 pt-16 md:pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="mb-4"
-            >
-              <span className="inline-block py-1 px-3 rounded-full bg-tvh-red/10 text-tvh-red text-sm font-medium border border-tvh-red/20">
-                2024 Edition
-              </span>
-            </motion.div>
+          <FlickeringGrid
+        className="z-0 absolute inset-0 size-full"
+        squareSize={4}
+        gridGap={6}
+        color="#6B7280"
+        maxOpacity={0.5}
+        flickerChance={0.1}
+        height={550}
+        width={2000}
+      />
+            
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -80,11 +82,11 @@ export default function Hero() {
             >
               <div className="flex items-center">
                 <Calendar className="h-5 w-5 text-tvh-yellow mr-2" />
-                <span className={mutedTextColor}>October 15-17, 2024</span>
+                <span className={mutedTextColor}>September 21-23, 2024</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-tvh-blue mr-2" />
-                <span className={mutedTextColor}>Johannesburg, South Africa</span>
+                <span className={mutedTextColor}>Pretoria, South Africa</span>
               </div>
             </motion.div>
           </div>
@@ -110,16 +112,10 @@ export default function Hero() {
               transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               className="absolute -top-10 right-10 bg-tvh-yellow/90 text-black font-bold py-2 px-4 rounded-lg shadow-lg"
             >
-              48 Hours
+              52 Hours
             </motion.div>
 
-            <motion.div
-              animate={{ y: [0, 15, 0] }}
-              transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1 }}
-              className="absolute -bottom-5 left-10 bg-tvh-blue/90 text-white font-bold py-2 px-4 rounded-lg shadow-lg"
-            >
-              R100K in Prizes
-            </motion.div>
+            
           </motion.div>
         </div>
 

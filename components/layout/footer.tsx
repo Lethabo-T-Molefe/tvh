@@ -152,7 +152,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className={`border-t ${borderColor} pt-8 text-center ${mutedTextColor} text-sm`}
         >
-          <p>© {currentYear} The Varsity Hackathon. All rights reserved.</p>
+          <p>©  Copyright {currentYear} TVH. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

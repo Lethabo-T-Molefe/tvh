@@ -12,19 +12,19 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "Who can participate in TVH?",
+      question: "What is TVH?",
       answer:
-        "TVH is open to all registered students from universities across South Africa. You must be an enrolled student at the time of the hackathon to participate.",
+        "Tshwane Varsity Hackathon is an annual hacking competition, open to all universities and gives students industry problems to solve. It is a product of TUT, in partnership with City of Tshwane Metropolitan Municipality. TVH also provides first-hand experience at real-life technological problems; of which also builds on student's CV and experience, which is crucial in industry during the job hunt. Hackathon for all universities to compete and the community is more than welcome to provide their problems to contestants. Through this initiative, TUT aims to engage and grow the South African youth.  CoT is not only providing problem statement. It's also bringing industry mentors, financial backing and platform to pilot solutions that are service delivery focused or benefiting as CoT is also investing in youth and innovative Contacts.",
     },
     {
-      question: "Do I need to be a computer science student?",
+      question: "Who can compete?",
       answer:
-        "No, TVH welcomes students from all academic backgrounds. Whether you're studying engineering, design, business, or any other field, you're welcome to join and contribute your unique perspective.",
+        "Students of TUT and any student from a South African tertiary institution in Tshwane with backgrounds in ICT, Entrepreneurship, UI/UX etc. Participation from mentors and coaches from industry is not just encouraged but would be highly appreciated (Although we're closed for this year). Community members can also enter by bring community problems that can be solved through digital solutions. Problems most prominent in South African townships such as GBV, poverty, water and electricity availability are welcome to be brought forth on our website, but obviously we cannot address all the problems at once.",
     },
     {
-      question: "How big can teams be?",
+      question: "Where is it taking place?",
       answer:
-        "Teams can consist of 2-4 members. You can form a team in advance or find teammates during the team formation session at the beginning of the hackathon.",
+        "Tshwane University of Technology TB Hall main campus (Pretoria West)",
     },
     {
       question: "What should I bring to the hackathon?",
@@ -44,7 +44,7 @@ export default function FAQ() {
     {
       question: "Will there be prizes?",
       answer:
-        "Yes! TVH offers over R100,000 in prizes across various categories including Best Overall Project, Most Innovative Solution, Best Technical Implementation, and more. Specific prize details will be announced at the opening ceremony.",
+        "Yes! TVH offers Gifts, Vouchers and training across various categories including Best Overall Project, Most Innovative Solution, Best Technical Implementation, and more. Specific prize details will be announced at the opening ceremony.",
     },
   ]
 

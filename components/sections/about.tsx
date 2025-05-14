@@ -50,7 +50,7 @@ export default function About() {
         ></div>
         <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full bg-tvh-yellow/10 blur-3xl"></div>
       </div>
-
+      
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

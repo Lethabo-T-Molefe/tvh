@@ -6,6 +6,10 @@ import FAQ from "@/components/sections/faq"
 import Contact from "@/components/sections/contact"
 import Announcements from "@/components/sections/announcements"
 import FloatingParticles from "@/components/ui/floating-particles"
+import { FlickeringGrid } from "@/components/ui/flickering-grid"
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision"
+import { BeamsBackground } from "@/components/ui/beams-background"
+
 
 export default function Home() {
   return (
@@ -16,6 +20,7 @@ export default function Home() {
       </div>
 
       <div className="relative z-10">
+        
         <Hero />
         <About />
         <Timeline />

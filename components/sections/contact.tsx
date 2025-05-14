@@ -59,7 +59,7 @@ export default function Contact() {
     {
       icon: <MapPin className="h-6 w-6 text-tvh-blue" />,
       title: "Location",
-      details: "Johannesburg, South Africa",
+      details: "Tshwane, South Africa",
       link: "https://maps.google.com",
     },
   ]

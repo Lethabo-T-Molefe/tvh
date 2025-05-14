@@ -15,16 +15,13 @@ export interface Announcement {
 export const announcementsData: Announcement[] = [
   {
     id: "ann-2024-01",
-    title: "TVH 2024 Registration Now Open!",
-    date: "May 1, 2024",
-    summary: "Registration for The Varsity Hackathon 2024 is now open. Secure your spot today!",
+    title: "Design Thinking ",
+    date: "TBA",
+    summary: "Empower students to think outside the box",
     content: [
-      "We're excited to announce that registration for The Varsity Hackathon 2024 is now officially open! This year's event will take place from October 15-17, 2024, at our venue in Johannesburg.",
-      "TVH 2024 promises to be our biggest and most exciting hackathon yet, with over R100,000 in prizes, world-class mentors, and exciting challenges from our industry partners.",
-      "Registration is open to all currently enrolled university students in South Africa. Teams can consist of 2-4 members, and you can either register as a complete team or as an individual (we'll help you find teammates during the event).",
-      "Early bird registration closes on July 31, 2024, so don't wait too long to secure your spot!",
+      "",
     ],
-    priority: "high",
+    priority: "low",
     category: "registration",
     link: {
       text: "Register Now",
@@ -33,17 +30,15 @@ export const announcementsData: Announcement[] = [
   },
   {
     id: "ann-2024-02",
-    title: "New Platinum Sponsor Announcement",
-    date: "April 25, 2024",
-    summary: "We're thrilled to welcome TechCorp as our newest Platinum sponsor for TVH 2024!",
+    title: "TVH Launch",
+    date: "May 15, 2025",
+    summary: "To empower hackers with practical techniques to develop ideas and implement through agile framework.",
     content: [
-      "The TVH organizing committee is excited to announce that TechCorp has joined as a Platinum sponsor for the 2024 edition of The Varsity Hackathon!",
-      "TechCorp is a leading technology company specializing in artificial intelligence and machine learning solutions. Their support will enable us to provide even better resources, prizes, and experiences for all participants.",
-      "As part of their sponsorship, TechCorp will be offering exclusive workshops on AI implementation, mentorship from their top engineers, and special prizes for AI-focused projects.",
-      "We're incredibly grateful for TechCorp's support and look forward to the amazing opportunities this partnership will bring to TVH participants.",
+      "To empower hackers with practical techniques to develop ideas and implement through agile framework.",
+      
     ],
     priority: "medium",
-    category: "sponsors",
+    category: "",
     link: {
       text: "Learn More About Our Sponsors",
       url: "/#sponsors",
@@ -51,21 +46,21 @@ export const announcementsData: Announcement[] = [
   },
   {
     id: "ann-2024-03",
-    title: "Call for Mentors and Judges",
-    date: "April 20, 2024",
-    summary: "We're looking for industry professionals to serve as mentors and judges for TVH 2024.",
+    title: "7th Annual TVH Event ",
+    date: "September 21-23, 2025",
+    summary: "To provide gauteng students with a playground to implement their ideas.",
     content: [
-      "Are you an industry professional with expertise in software development, design, product management, or entrepreneurship? We invite you to join TVH 2024 as a mentor or judge!",
+      "Are you an industry professional with expertise in software development, design, product management, or entrepreneurship? We invite you to join TVH 2025 as a mentor or judge!",
       "Mentors will provide guidance and support to participating teams throughout the hackathon, helping them refine their ideas, overcome technical challenges, and prepare their presentations.",
       "Judges will evaluate the final projects based on innovation, technical complexity, design, and potential impact.",
       "This is a fantastic opportunity to give back to the tech community, discover emerging talent, and be part of South Africa's premier inter-university hackathon.",
-      "Applications for mentors and judges are open until August 31, 2024.",
+      "Applications for mentors and judges are open until September 21-23, 2025.",
     ],
     priority: "medium",
     category: "volunteers",
     link: {
-      text: "Apply to be a Mentor or Judge",
-      url: "/mentors",
+      text: "",
+      url: "/",
     },
   },
   {
