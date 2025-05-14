@@ -50,7 +50,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className={`text-4xl md:text-6xl lg:text-7xl font-bold mb-6 font-heading ${textColor}`}
             >
-              The <span className="gradient-text">Varsity</span> Hackathon
+              Tshwane <span className="gradient-text">Varsity</span> Hackathon
             </motion.h1>
 
             <motion.p
@@ -59,7 +59,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className={`text-xl ${mutedTextColor} mb-8 max-w-xl`}
             >
-              South Africa's premier inter-university hackathon competition. Join hundreds of students for 48 hours of
+              South Africa's premier inter-university hackathon competition. Join hundreds of students for 53 hours of
               coding, innovation, and fun!
             </motion.p>
 
@@ -69,24 +69,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 mb-8"
             >
-              <Button
-                size="lg"
-                className="bg-tvh-red hover:bg-tvh-red/90 text-white font-medium group relative overflow-hidden"
-              >
-                <span className="relative z-10 flex items-center">
-                  Register Now
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-tvh-red to-tvh-red" />
-                <span className="absolute inset-0 bg-gradient-to-r from-tvh-red to-tvh-red/70 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-tvh-blue text-tvh-blue hover:bg-tvh-blue/10 font-medium"
-              >
-                Learn More
-              </Button>
+              
             </motion.div>
 
             <motion.div

@@ -28,14 +28,10 @@ export default function TeamGrid() {
 
   // Sort departments by priority
   const departmentOrder = [
-    "Executive organizing Team",
-    "Lead organizing Team",
-    "General organizing Team",
-    "Design",
-    "Marketing",
-    "Sponsorships",
-    "Logistics",
-    "Volunteers",
+    "Executive Organizing Team",
+    "Executive Committee Team",
+    "Organizing Team",
+    "Partners",
   ];
 
   return (
@@ -44,15 +40,15 @@ export default function TeamGrid() {
         if (!departments[department]) return null
 
         return (
-          <div key={department} className="mb-16">
+          <div key={department} className="mb-16  align-center">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className={`text-2xl md:text-3xl font-bold mb-8 ${textColor}`}
+              className={`text-2xl md:text-3xl font-bold mb-8 ${textColor} align-center`}
             >
-              {department} Team
+              {department}
             </motion.h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
