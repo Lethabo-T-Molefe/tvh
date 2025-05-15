@@ -18,7 +18,7 @@ export default function GalleryPageWithBento() {
             TVH <span className="gradient-text">Gallery</span>
           </h1>
           <p className="text-xl text-muted-foreground dark:text-gray-300 max-w-3xl mx-auto">
-            Browse photos from TVH events from 2019 to 2024. Relive the moments, innovations, and celebrations.
+            Browse photos from TVH events from 2018 to 2024. Relive the moments, innovations, and celebrations.
           </p>
         </div>
 
