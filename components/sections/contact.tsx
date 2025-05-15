@@ -137,7 +137,7 @@ export default function Contact() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://x.com/TUT_TVH" target="_blank"
                 className={`${isDark ? "bg-black/50" : "bg-gray-100"} p-3 rounded-lg ${isDark ? "text-gray-400" : "text-gray-500"} hover:text-tvh-red ${isDark ? "hover:bg-black/70" : "hover:bg-gray-200"} transition-colors`}
               >
                 <svg
@@ -156,7 +156,7 @@ export default function Contact() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/tshwane.varsity.hackathon?igsh=ankwcHJieWUwbXhv" target="_blank"
                 className={`${isDark ? "bg-black/50" : "bg-gray-100"} p-3 rounded-lg ${isDark ? "text-gray-400" : "text-gray-500"} hover:text-tvh-yellow ${isDark ? "hover:bg-black/70" : "hover:bg-gray-200"} transition-colors`}
               >
                 <svg
@@ -177,7 +177,7 @@ export default function Contact() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/tshwanevarsityhackathon" target="_blank"
                 className={`${isDark ? "bg-black/50" : "bg-gray-100"} p-3 rounded-lg ${isDark ? "text-gray-400" : "text-gray-500"} hover:text-tvh-blue ${isDark ? "hover:bg-black/70" : "hover:bg-gray-200"} transition-colors`}
               >
                 <svg
@@ -196,7 +196,7 @@ export default function Contact() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="#" target="_blank"
                 className={`${isDark ? "bg-black/50" : "bg-gray-100"} p-3 rounded-lg ${isDark ? "text-gray-400" : "text-gray-500"} hover:text-tvh-red ${isDark ? "hover:bg-black/70" : "hover:bg-gray-200"} transition-colors`}
               >
                 <svg
