@@ -111,16 +111,7 @@ export default function TeamMemberModal({ member, onClose }: TeamMemberModalProp
                   <span>{member.department}</span>
                 </div>
 
-                {member.location && (
-                  <div
-                    className={`flex items-center px-3 py-1.5 rounded-full ${
-                      isDark ? "bg-tvh-blue/20 text-tvh-blue" : "bg-tvh-blue/10 text-tvh-blue"
-                    }`}
-                  >
-                    <MapPin className="h-4 w-4 mr-1.5" />
-                    <span>{member.location}</span>
-                  </div>
-                )}
+                
               </motion.div>
 
               {/* Bio */}
