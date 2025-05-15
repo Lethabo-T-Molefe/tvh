@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { assets } from "@/lib/assets"
 import { Code, Lightbulb, Users } from "lucide-react"
 import { useTheme } from "next-themes"
+import { PhotoGallery } from "../ui/gallery"
 
 export default function About() {
   const { theme } = useTheme()
@@ -175,6 +176,7 @@ export default function About() {
           ))}
         </div>
       </div>
+      <PhotoGallery  /> 
     </section>
   );
 }

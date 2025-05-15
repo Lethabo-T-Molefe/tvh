@@ -8,6 +8,7 @@ import CountdownTimer from "@/components/ui/countdown-timer"
 import { useTheme } from "next-themes"
 import { FloatingPaper } from "@/components/floating-paper";
 import { FlickeringGrid } from "../ui/flickering-grid"
+import { ImagesSlider } from "../ui/images-slider"
 
 export default function Hero() {
   // Set the hackathon date (example: October 15, 2024)
@@ -20,6 +21,13 @@ export default function Hero() {
     : "bg-gradient-to-b from-white via-white/95 to-white"
   const textColor = isDark ? "text-white" : "text-gray-900"
   const mutedTextColor = isDark ? "text-gray-300" : "text-gray-600"
+
+  const images = [
+      "/assets/img/portfolio/23_18.png",
+      "/assets/img/portfolio/22_1.jpg",
+      "/assets/img/portfolio/19_5.jpg",
+      "/assets/img/portfolio/tvh7.jpg"
+   ];
 
   return (
     <section id="home" className="min-h-screen pt-20 relative overflow-hidden">
@@ -96,12 +104,25 @@ export default function Hero() {
             className="relative"
           >
             <div className="relative h-[400px] w-full">
-              <Image
-                src={"/assets/img/portfolio/19_2.jpg"}
-                alt="TVH Hackathon"
-                fill
-                className="object-contain"
-              />
+            <ImagesSlider className="h-[420px] rounded-xl" images={images}>
+              <motion.div
+                initial={{
+                  opacity: 8,
+                  y: -80,
+                }}
+                animate={{
+                  opacity: 0,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.6,
+                }}
+                className="z-50 flex flex-col justify-center items-center"
+              >
+                
+                
+              </motion.div>
+            </ImagesSlider>
             </div>
 
             {/* Floating elements */}

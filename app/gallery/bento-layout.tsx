@@ -16,7 +16,7 @@ export default function BentoLayout() {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null)
   const [filteredImages, setFilteredImages] = useState<GalleryImage[]>(galleryData)
 
-  const years = ["all", "2024", "2023", "2022", "2021", "2020", "2019"]
+  const years = ["all", "2024", "2023", "2022", "2021", "2020", "2019", "2018"]
 
   useEffect(() => {
     if (activeYear === "all") {
