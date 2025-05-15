@@ -27,7 +27,7 @@ export const teamData: TeamMember[] = [
     name: "Morongoe Mashoeng",
     title: "1st Vice Chief Organizer",
     department: "Executive Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/mrg.jpg",
+    image: "/assets/img/team/mrg.jpg",
     bio: [
       "My name is Morongoe Mashoeng. I am the Acting Innovation Consultant in the City of Tshwane. In my 10 years in local government, I have been exposed to secretarial and administrative work, finance, and innovation. I am currently pursuing a formal qualification in Innovation Management to sharpen my skill set and to better serve the youth to realise their potential and growth in their professional lives. I find great pleasure in championing initiatives directed at empowering the young and youth as I find it fulfilling to see how our future leaders grow beyond imaginable grounds. I equally strive to be an agent of positive change. My motto is: The sky is certainly not the limit and there is no harm in taking a few people along the ride with you….",
     ],
@@ -49,7 +49,7 @@ export const teamData: TeamMember[] = [
     name: "Quintin Magaseng",
     title: "Chief Executive",
     department: "Executive Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/quintin.jpg",
+    image: "/assets/img/team/quintin.jpg",
     bio: [
       "Quintin Malope Magaseng is a passionate lecturer, who began his academic journey as a tutor, leading to lecturing roles at Eduvos, Capricorn TVET College, and currently Tshwane University of Technology (TUT) as a Lecturer and Module Coordinator in the ICT: 1st Year and Foundation Unit.\nBeyond academia, he serves as the Chief Organizer in the TVH structure, driving innovation, talent development, and industry exposure for students. He holds multiple qualifications from TUT, including a National Diploma in IT: Software Development, BTech in IT Support Services, PGDip in IT, and a PGCE from UNISA to refine his lecturing and pedagogical skills. Currently, he is completing his master’s research on Gateway Placement in Wireless Mesh Networks.\nQuintin has also earned six international certifications from Cisco and Microsoft and has held key leadership roles within TVH structure as the university-industry relations officer and the Lead Team for Digital Academy. His dedication to education, research, advancing technology and industry collaboration continues to shape the future of ICT and empower students for success.",
     ],
@@ -69,7 +69,7 @@ export const teamData: TeamMember[] = [
     name: "Dibuseng Modise",
     title: "2nd Vice Chief Organizer",
     department: "Executive Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/tba.jpg",
+    image: "/assets/img/team/tba.jpg",
     bio: [
       "Priya leads TVH's partnerships and sponsorship efforts, building relationships with companies, universities, and organizations that support the hackathon's mission. She joined the leadership team in 2021 after successfully securing major sponsorships as a volunteer.",
       "With a background in marketing and business development, Priya has helped TVH establish partnerships with some of South Africa's leading tech companies and educational institutions. Her strategic approach to partnership development has been instrumental in expanding the resources and opportunities available to hackathon participants.",
@@ -94,7 +94,7 @@ export const teamData: TeamMember[] = [
     name: "Nkulumo Nkuna",
     title: "Infrustructure & Safety",
     department: "Executive Committee Team",
-    image: "https://tvh.icep.co.za/assets/img/team/nkuna.jpg",
+    image: "/assets/img/team/nkuna.jpg",
     bio: [
       "I'm a passionate and results-oriented IT professional with over 5 years of experience across a variety of technical roles. I hold a Post Graduate Diploma (Honours degree) in Information Technology and bring valuable experience as a Solutions Architect, Cloud Administrator, Network Engineer and IT Support & End User Computing Engineer II . My expertise includes Software, Hardware, Network Architecture, Configuration, Troubleshooting, ensuring robust and efficient IT infrastructures.",
       "I excel in designing and optimizing systems to meet organizational needs while maintaining high levels of performance and security. My hands-on experience and strategic approach make me adept at resolving complex technical issues, providing comprehensive solutions, and driving continuous improvement in IT environments. I have a strong foundation in IT concepts and principles, excellent communication and interpersonal skills ability to learn and adapt to new technologies problem-solving and analytical skills ability to work independently and as part of a team.",
@@ -116,7 +116,7 @@ export const teamData: TeamMember[] = [
     name: "Masego Dibetle",
     title: "Media,Marketing & entertainment",
     department: "Executive Committee Team",
-    image: "https://tvh.icep.co.za/assets/img/team/Masego2.jpg",
+    image: "/assets/img/team/Masego2.jpg",
     bio: [
       "Masego Prudence Dibetle is a BTech Information Technology In Business Applications Graduate, current busy and almost done with her MComp in Informatics. Individual with a passion for academics. Lecturer in the 1st Year & Foundation Unit with a focus on computing fundamentals. A two-time Cum-Laude holder. A Chancellor's award was presented to her in 2019 in recognition of her outstanding academic record. For both her NDip and Btech years, she was an ICT Top 10 Achiever at the Tshwane University of Technology. During the time when TUT and Huawei were forming a partnership, she was selected to represent TUT at Huawei's Shenzhen, China headquarters. It is her passion to ensure that gender-responsive climate education is implemented, and that everyone has access to it, so that more women and girls can participate in creating a sustainable and just future. It has been noted throughout history that a significant gender gap has persisted in all sciences, technology, engineering and mathematics (STEM) disciplines worldwide. As part of her efforts to empower women, she has been involved in the Grace Hopper Conference and the Women Techmakers Scholars Program.",
     ],
@@ -138,7 +138,7 @@ export const teamData: TeamMember[] = [
     name: "Rhulani Salani",
     title: "Registrar",
     department: "Executive Committee Team",
-    image: "https://tvh.icep.co.za/assets/img/team/rhulani.jpg",
+    image: "/assets/img/team/rhulani.jpg",
     bio: [
       "Meet Rhulani Carlet Salani, an accomplished Information Technology graduate from Tshwane University of Technology, where I now have the privilege of lecturing on Networking and Computing Fundamentals.",
       "My journey in the tech world has been nothing short of exciting. Armed with a Postgraduate Diploma in Informatics, I've further honed my skills by becoming a certified AWS Cloud Practitioner and a certified AWS Solutions Architect. Currently, I'm embarking on a journey towards a Master's degree in Informatics and gaining certification in Cybersecurity.",
@@ -162,7 +162,7 @@ export const teamData: TeamMember[] = [
     name: "Glen Lehlohonolo Moepi",
     title: "Industry Support",
     department: "Executive Committee Team",
-    image: "https://tvh.icep.co.za/assets/img/team/moepi.jpg",
+    image: "/assets/img/team/moepi.jpg",
     bio: [
         "Masters Degree in Information Technology, Hardware and Network Security. Lecturer and Technologist.",
     ],
@@ -183,7 +183,7 @@ export const teamData: TeamMember[] = [
     name: "Elesa Ntuli",
     title: "Digital Academy",
     department: "Executive Committee Team",
-    image: "https://tvh.icep.co.za/assets/img/team/mt2.jpg",
+    image: "/assets/img/team/mt2.jpg",
     bio: [
       "Elesa Ntuli started her journey as a student assistant in TUT eMalahleni campus in 2004 while graduating her diploma in IT, currently she is a Lecturer in TUT Soshanguve from 2012 to date. She graduated from TUT and obtained her master’s degree in computer science engineering during 2013-2017, she obtained second position in ICT faculty Research Day 2015 she has few publications under her name, presently pursuing her PhD degree in Computer Science Engineering. Her research interests include Wireless Computing and Networking, TV white space, she enjoys learning and imparting knowledge to others. Amongst her degrees she obtained the following qualifications: CCNA 1,2 and 3 Certificate in A+ Support Technician National Certificate in Information Technology: System Support Project Management certificate NQF level 4 Certificate in Health and Safety Representative Construction Contractor NQF Level 2 (EPWP) Certificate in Licence to Supervise Certificate in Presenting & Publishing R&I Outcomes [Part I & II], Academic Writing On top of all this she’s a mother of 4 and a wife for 17 years and enjoys cooking.",
     ],
@@ -205,7 +205,7 @@ export const teamData: TeamMember[] = [
     name: "Pearlsy Phoku",
     title: "Admin",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/pearlsy.jpeg",
+    image: "/assets/img/team/pearlsy.jpeg",
     bio: [
       "Pearlsy is an Admin in TVH structure, Has a Postgraduate Diploma in Administrative Information Management and currently in pursuit of a Masters Degree in Organisational Leadership. Her aim is to optimize the workflows and operational effeciency in TVH success.",
     ],
@@ -222,7 +222,7 @@ export const teamData: TeamMember[] = [
     name: "Refiloe Mthethwa",
     title: "Digitals:Web & Online Presence",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/Mthethwa.jpeg",
+    image: "/assets/img/team/Mthethwa.jpeg",
     bio: [
       "Refiloe Mthethwa, a dedicated and proactive student leader at Tshwane University of Technology's Soshanguve South Campus, is currently pursuing a diploma in informatics. With an unwavering passion for harnessing the potential of technology to foster positive change. She has played integral roles in:",
       "• Former HC Informatics Chairperson 2021/22\n• Former ICT SFC Secretary 2022/23\n• Former CSRC Deputy Secretary 2023/24",
@@ -245,7 +245,7 @@ export const teamData: TeamMember[] = [
     name: "Sibongile Malinga",
     title: "Incubation & commissioning",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/sibongile.jpg",
+    image: "/assets/img/team/sibongile.jpg",
     bio: [
       "Sibongle Malinga, completed National Diploma and B-tech in Software Development, she is a lecturer at the Faculty of Information and Communications Technology, in First Year and Foundation Unit, at Tshwane University of Technology. She lecturing programming language. She is currently doing a Post graduate",
     ],
@@ -266,7 +266,7 @@ export const teamData: TeamMember[] = [
     name: "Sibongile Mthimkhulu",
     title: "Volunteers & Sponsorship",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/Mthimkhulu.jpg",
+    image: "/assets/img/team/Mthimkhulu.jpg",
     bio: [
       "Education and Career: Sibongile Mthimkhulu, a trailblazer in the field of education, has recently achieved a significant milestone by completing her Master's degree in Education. Her story is one of perseverance, dedication, and a relentless commitment to transforming the lives of others through the power of learning.",
       "Early Life: Born and raised in the vibrant city of Johannesburg, South Africa, Sibongile's passion for education was ignited at a young age. Growing up in a community where access to quality schooling was limited, she witnessed firsthand the disparities that existed within the education system. Determined to make a difference, Sibongile embarked on a journey to challenge the status quo and advocate for educational equity.",
@@ -290,7 +290,7 @@ export const teamData: TeamMember[] = [
     name: "Siviwe Binqela",
     title: "Prices, Gifts & Guest List",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/siviwe.png",
+    image: "/assets/img/team/siviwe.png",
     bio: [
       "Siviwe Binqela, passionate about self-improvement, learning and sharing knowledge. A BTech graduate in the field of Information Technology (Informatics) and currently enrolled on my Post Graduate studies in the same field. I have served as an Academic Tutor in the First Year & Foundation Unit for 2years, and are now a Lecturer in the Unit with the focus on Programming and Computational Mathematics.",
     ],
@@ -311,7 +311,7 @@ export const teamData: TeamMember[] = [
     name: "Tebogo Sako",
     title: "MC's, Announcements & Presentation",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/sako.jpg",
+    image: "/assets/img/team/sako.jpg",
     bio: [
       "I am a dedicated individual who is always eager to learn new things. I give my all and more in everything that is required of me.",
     ],
@@ -332,7 +332,7 @@ export const teamData: TeamMember[] = [
     name: "Masedi Matlala",
     title: "Cyber-Security",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/matlala.jpg",
+    image: "/assets/img/team/matlala.jpg",
     bio: [
       "Mr. Masedi Mankwenkwe Matlala is a seasoned South African professional specializing in Information and Communication Technology (ICT), project management, and entrepreneurship. With a strong foundation in ICT, he has successfully led numerous projects, demonstrating his proficiency in managing complex technological initiatives.​​",
       "Currently, Mr. Matlala serves as a part-time lecturer at the Tshwane University of Technology (TUT), where he imparts his extensive knowledge and experience to students in the Faculty of Information and Communication Technology. His role in academia reflects his unwavering commitment to education and the development of future ICT professionals.​​",
@@ -355,7 +355,7 @@ export const teamData: TeamMember[] = [
     name: "Moeketsi Kema",
     title: "Workshops & Webinar",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/tba.jpg",
+    image: "/assets/img/team/tba.jpg",
     bio: [
       "I am Moeketsi Kema, a dedicated and passionate individual who is always eager to learn new things. I give my all and more in everything that is required of me.",
     ],
@@ -375,7 +375,7 @@ export const teamData: TeamMember[] = [
     name: "Happy Twala",
     title: "Ms Teams, Access Control & Data",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/twala.JPG",
+    image: "/assets/img/team/twala.JPG",
     bio: [
       "I am a master's candidate in Information Technology with a strong foundation in networking and security. A lecturer in first year and foundation unit. I am currently deepening my expertise in cloud computing and AI."
     ],
@@ -395,7 +395,7 @@ export const teamData: TeamMember[] = [
     name: "Nkosinathi Dhladla",
     title: "Adjudication",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/nkosinathi.jpg",
+    image: "/assets/img/team/nkosinathi.jpg",
     bio: [
       "Nkosinathi Dladla is an Associate Consultant at IQbusiness with a strong background in project management, business analysis, and data processing. He holds a Postgraduate Diploma in Management from Wits Business School and a Bachelor of Arts in International Relations and Politics from the University of the Witwatersrand. Nkosinathi is known for his critical and analytical thinking skills, which enable him to solve complex problems and create long-term strategies. He has experience working on various high-impact projects, including AML and IT PMO. In addition to his professional work, Nkosinathi is passionate about mentoring and coaching, particularly in supporting and preparing young talent for the workplace."
     ],
@@ -415,7 +415,7 @@ export const teamData: TeamMember[] = [
     name: "Phenyo Matabane",
     title: "University & Industry Relations",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/Phenyo.jpg",
+    image: "/assets/img/team/Phenyo.jpg",
     bio: [
        "Phenyo is an Associate Multi-Disciplinary Consultant at IQbusiness with a rich background in both the higher education and financial services sectors. His expertise spans market and economic research, community engagement, and effective project delivery. Phenyo’s attention to detail, analytical skills, and commitment to task completion make him a valuable asset in any professional setting."
     ],
@@ -435,7 +435,7 @@ export const teamData: TeamMember[] = [
     name: "Pracious Mahlangu",
     title: "Systems & Compliance",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/tba.jpg",
+    image: "/assets/img/team/tba.jpg",
     bio: [
       "I am Pracious Mahlangu, a dedicated and passionate individual who is always eager to learn new things. I give my all and more in everything that is required of me."
     ],
@@ -455,7 +455,7 @@ export const teamData: TeamMember[] = [
     name: "Dipono Manasoe",
     title: "DevOps",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/dipono.jpg",
+    image: "/assets/img/team/dipono.jpg",
     bio: [
       "Dipono Manasoe, completed my national diploma at TUT, did my internship at ICEP from there I went to different companies to gain more experience and acquire more skills. Now am software developer lead team at ICEP, and doing Adv Diploma."
     ],
@@ -475,7 +475,7 @@ export const teamData: TeamMember[] = [
     name: "Matthews Mfati",
     title: "Logistics:Distribution & Tracking",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/matthews.jpeg",
+    image: "/assets/img/team/matthews.jpeg",
     bio: [
       "A Postgraduate student at TUT FoICT, First Years & Foundation Unit Programming Lecturer. TUT 2018 and 2019 Kasi Hackathon Lead Team"
     ],
@@ -495,7 +495,7 @@ export const teamData: TeamMember[] = [
     name: "Ayub",
     title: "AWS",
     department: "Organizing Team",
-    image: "https://tvh.icep.co.za/assets/img/team/ayu.jpg",
+    image: "/assets/img/team/ayu.jpg",
     bio: [
       "Yasser is a lecturer at Tshwane University of Technology armed with teaching experience, knowledge management systems, communication networks and software engineering. During his journey, he learned several programming styles and solutions that he still implements to this day. He has been escalating what is achievable with code to make our daily life more efficient.",
     ],
@@ -515,7 +515,7 @@ export const teamData: TeamMember[] = [
     name: "Taurai Hungwe",
     title: "Sefako Makgatho Health Sciences University (SMU)",
     department: "Partners",
-    image: "https://tvh.icep.co.za/assets/img/team/taurai.jpg",
+    image: "/assets/img/team/taurai.jpg",
     bio: [
       "TAURAI HUNGWE received a PhD degree in science from Sefako Makgatho Health Sciences University (SMU), Pretoria, South Africa. He is currently a Senior Lecturer in the Department of Computer Science and Information Technology at SMU and Acting Centre Manager at SMU Centre for Entrepreneurship Rapid Incubator (CfERI). His research interests include cybersecurity, information security and digital forensics in the Cloud and databases, artificial intelligence, curriculum, teaching and learning and entrepreneurship.",
     ],
@@ -535,7 +535,7 @@ export const teamData: TeamMember[] = [
     name: "Tumelo Rasedile",
     title: "Intergrated Communication Design - Faculty of Arts and Design(TUT)",
     department: "Partners",
-    image: "https://tvh.icep.co.za/assets/img/team/Tumelo.png",
+    image: "/assets/img/team/Tumelo.png",
     bio: [
       "Lecturer and WIL Coordinator\nIntergrated Communication Design - Faculty of Arts and Design",
     ],
