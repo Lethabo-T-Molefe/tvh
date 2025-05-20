@@ -48,7 +48,7 @@ export default function Hero() {
         maxOpacity={0.5}
         flickerChance={0.1}
         height={550}
-        width={2000}
+        width={20000}
       />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>

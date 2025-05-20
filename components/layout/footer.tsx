@@ -22,8 +22,27 @@ export default function Footer() {
   const cardHoverBorder = isDark ? "hover:border-white/30" : "hover:border-gray-300"
   const iconBg = isDark ? "bg-black/70" : "bg-gray-100"
 
+const Logo = () => {
+  const { theme } = useTheme()
+  const isDark = theme === "dark"
+
   return (
-    <footer className={`${bgColor} ${textColor} pt-16 pb-8 relative overflow-hidden`}>
+    <div className="relative h-10 w-auto">
+      <Image
+        src={isDark ? "/tut_logo_light.png" : "/tut_logo_dark.png"}
+        alt="TUT logo"
+        width={150}
+        height={50}
+        className="h-10 w-auto object-contain"
+      />
+    </div>
+  )
+}
+
+  return (
+    <footer
+      className={`${bgColor} ${textColor} pt-16 pb-8 relative overflow-hidden`}
+    >
       {/* Background decoration */}
       <div className="absolute inset-0 z-0 opacity-10">
         <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-tvh-red blur-3xl"></div>
@@ -40,29 +59,36 @@ export default function Footer() {
             className="col-span-1 md:col-span-1"
           >
             <div className="flex items-center mb-4">
-              <div className="relative h-10 w-10 mr-2">
-                <Image
-                  src={assets.placeholders.logo || "/placeholder.svg"}
-                  alt="TVH Logo"
-                  width={40}
-                  height={40}
-                  className="object-contain"
-                />
+              <div className="relative h-150 w-auto mr-2">
+                <Logo />
               </div>
-              <span className={`text-xl font-bold ${textColor}`}>TVH</span>
             </div>
-            <p className={`${mutedTextColor} mb-4`}>South Africa's premier inter-university hackathon competition</p>
+            <p className={`${mutedTextColor} mb-4`}>
+              South Africa's premier inter-university hackathon competition
+            </p>
             <div className="flex space-x-4">
-              <Link href="#" className={`${mutedTextColor} hover:text-tvh-red transition-colors`}>
+              <Link
+                href="https://x.com/TUT_TVH"
+                className={`${mutedTextColor} hover:text-tvh-red transition-colors`}
+              >
                 <Twitter size={20} />
               </Link>
-              <Link href="#" className={`${mutedTextColor} hover:text-tvh-yellow transition-colors`}>
+              <Link
+                href="https://www.instagram.com/tshwane.varsity.hackathon?igsh=ankwcHJieWUwbXhv"
+                className={`${mutedTextColor} hover:text-tvh-yellow transition-colors`}
+              >
                 <Instagram size={20} />
               </Link>
-              <Link href="#" className={`${mutedTextColor} hover:text-tvh-blue transition-colors`}>
+              <Link
+                href="https://www.facebook.com/tshwanevarsityhackathon"
+                className={`${mutedTextColor} hover:text-tvh-blue transition-colors`}
+              >
                 <Facebook size={20} />
               </Link>
-              <Link href="#" className={`${mutedTextColor} hover:text-tvh-red transition-colors`}>
+              <Link
+                href="#"
+                className={`${mutedTextColor} hover:text-tvh-red transition-colors`}
+              >
                 <Linkedin size={20} />
               </Link>
             </div>
@@ -74,25 +100,39 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h3 className={`text-lg font-bold mb-4 ${textColor}`}>Quick Links</h3>
+            <h3 className={`text-lg font-bold mb-4 ${textColor}`}>
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#home" className={`${mutedTextColor} ${hoverColor} transition-colors`}>
+                <Link
+                  href="#home"
+                  className={`${mutedTextColor} ${hoverColor} transition-colors`}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#about" className={`${mutedTextColor} ${hoverColor} transition-colors`}>
+                <Link
+                  href="#about"
+                  className={`${mutedTextColor} ${hoverColor} transition-colors`}
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#timeline" className={`${mutedTextColor} ${hoverColor} transition-colors`}>
+                <Link
+                  href="#timeline"
+                  className={`${mutedTextColor} ${hoverColor} transition-colors`}
+                >
                   Timeline
                 </Link>
               </li>
               <li>
-                <Link href="#sponsors" className={`${mutedTextColor} ${hoverColor} transition-colors`}>
+                <Link
+                  href="#sponsors"
+                  className={`${mutedTextColor} ${hoverColor} transition-colors`}
+                >
                   Sponsors
                 </Link>
               </li>
@@ -108,22 +148,34 @@ export default function Footer() {
             <h3 className={`text-lg font-bold mb-4 ${textColor}`}>Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className={`${mutedTextColor} ${hoverColor} transition-colors`}>
+                <Link
+                  href="#"
+                  className={`${mutedTextColor} ${hoverColor} transition-colors`}
+                >
                   Rules
                 </Link>
               </li>
               <li>
-                <Link href="#" className={`${mutedTextColor} ${hoverColor} transition-colors`}>
+                <Link
+                  href="#"
+                  className={`${mutedTextColor} ${hoverColor} transition-colors`}
+                >
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="#" className={`${mutedTextColor} ${hoverColor} transition-colors`}>
+                <Link
+                  href="#"
+                  className={`${mutedTextColor} ${hoverColor} transition-colors`}
+                >
                   Code of Conduct
                 </Link>
               </li>
               <li>
-                <Link href="#" className={`${mutedTextColor} ${hoverColor} transition-colors`}>
+                <Link
+                  href="#"
+                  className={`${mutedTextColor} ${hoverColor} transition-colors`}
+                >
                   Privacy Policy
                 </Link>
               </li>
@@ -140,7 +192,9 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className={mutedTextColor}>Email: info@tvh.co.za</li>
               <li className={mutedTextColor}>Phone: +27 12 345 6789</li>
-              <li className={mutedTextColor}>Address: Johannesburg, South Africa</li>
+              <li className={mutedTextColor}>
+                Address: Johannesburg, South Africa
+              </li>
             </ul>
           </motion.div>
         </div>
@@ -152,9 +206,9 @@ export default function Footer() {
           viewport={{ once: true }}
           className={`border-t ${borderColor} pt-8 text-center ${mutedTextColor} text-sm`}
         >
-          <p>©  Copyright {currentYear} TVH. All rights reserved.</p>
+          <p>© Copyright {currentYear} TVH. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }

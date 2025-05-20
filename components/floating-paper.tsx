@@ -1,52 +1,71 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
-import { FileText } from "lucide-react"
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { FileText } from "lucide-react";
+
+type PaperProps = {
+  x: number;
+  y: number;
+  xKeyframes: number[];
+  yKeyframes: number[];
+  duration: number;
+};
 
 export function FloatingPaper({ count = 5 }) {
-  const [dimensions, setDimensions] = useState({ width: 1200, height: 800 })
+  const [papers, setPapers] = useState<PaperProps[]>([]);
 
   useEffect(() => {
-    // Update dimensions only on client side
-    setDimensions({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    })
+    const width = window.innerWidth;
+    const height = window.innerHeight;
 
-    const handleResize = () => {
-      setDimensions({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      })
-    }
+    const newPapers = Array.from({ length: count }).map(() => {
+      const startX = Math.random() * width;
+      const startY = Math.random() * height;
+      const xKeyframes = [
+        Math.random() * width,
+        Math.random() * width,
+        Math.random() * width,
+      ];
+      const yKeyframes = [
+        Math.random() * height,
+        Math.random() * height,
+        Math.random() * height,
+      ];
+      const duration = 20 + Math.random() * 10;
 
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+      return {
+        x: startX,
+        y: startY,
+        xKeyframes,
+        yKeyframes,
+        duration,
+      };
+    });
+
+    setPapers(newPapers);
+  }, [count]);
+
+  if (papers.length === 0) return null; // Prevent hydration mismatch
 
   return (
     <div className="relative w-full h-full">
-      {Array.from({ length: count }).map((_, i) => (
+      {papers.map((paper, i) => (
         <motion.div
           key={i}
           className="absolute"
           initial={{
-            x: Math.random() * dimensions.width,
-            y: Math.random() * dimensions.height,
+            x: paper.x,
+            y: paper.y,
           }}
           animate={{
-            x: [Math.random() * dimensions.width, Math.random() * dimensions.width, Math.random() * dimensions.width],
-            y: [
-              Math.random() * dimensions.height,
-              Math.random() * dimensions.height,
-              Math.random() * dimensions.height,
-            ],
+            x: paper.xKeyframes,
+            y: paper.yKeyframes,
             rotate: [0, 180, 360],
           }}
           transition={{
-            duration: 20 + Math.random() * 10,
-            repeat: Number.POSITIVE_INFINITY,
+            duration: paper.duration,
+            repeat: Infinity,
             ease: "linear",
           }}
         >
@@ -56,5 +75,5 @@ export function FloatingPaper({ count = 5 }) {
         </motion.div>
       ))}
     </div>
-  )
+  );
 }

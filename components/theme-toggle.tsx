@@ -1,12 +1,20 @@
-"use client"
+"use client";
 
-import { useTheme } from "next-themes"
-import { Button } from "@/components/ui/button"
-import { Moon, Sun } from "lucide-react"
-import { motion } from "framer-motion"
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Moon, Sun } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // ⛔ Prevent hydration mismatch
 
   return (
     <Button
@@ -22,8 +30,12 @@ export function ThemeToggle() {
         transition={{ duration: 0.2 }}
         className="absolute inset-0 flex items-center justify-center"
       >
-        {theme === "light" ? <Moon className="h-5 w-5 text-tvh-blue" /> : <Sun className="h-5 w-5 text-tvh-yellow" />}
+        {theme === "light" ? (
+          <Moon className="h-5 w-5 text-tvh-blue" />
+        ) : (
+          <Sun className="h-5 w-5 text-tvh-yellow" />
+        )}
       </motion.div>
     </Button>
-  )
+  );
 }
