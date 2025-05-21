@@ -16,12 +16,8 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden">
       {/* Dynamic background with particles */}
-      <div className="fixed inset-0 z-0">
-        <FloatingParticles />
-      </div>
 
       <div className="relative z-10">
-        
         <Hero />
         <About />
         <Announcements />
@@ -31,5 +27,5 @@ export default function Home() {
         <Contact />
       </div>
     </main>
-  )
+  );
 }

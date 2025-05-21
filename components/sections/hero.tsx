@@ -9,6 +9,7 @@ import { useTheme } from "next-themes"
 import { FloatingPaper } from "@/components/floating-paper";
 import { FlickeringGrid } from "../ui/flickering-grid"
 import { ImagesSlider } from "../ui/images-slider"
+import { WavyBackground } from "../ui/wavy-background"
 
 export default function Hero() {
   // Set the hackathon date (example: October 15, 2024)
@@ -32,24 +33,18 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen pt-20 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 z-0">
-        <div className={`absolute top-0 left-0 w-full h-full ${bgGradient}`}></div>
-        <div className="absolute top-20 left-0 w-96 h-96 rounded-full bg-tvh-red/20 blur-3xl"></div>
-        <div className="absolute bottom-20 right-0 w-96 h-96 rounded-full bg-tvh-blue/20 blur-3xl"></div>
-      </div>
+
+      
+        <div className="absolute inset-0 z-0">
+          <div
+            className={`absolute top-0 left-0 w-full h-full ${bgGradient}`}
+          ></div>
+          <div className="absolute top-20 left-0 w-96 h-96 rounded-full bg-tvh-red/20 blur-3xl"></div>
+          <div className="absolute bottom-20 right-0 w-96 h-96 rounded-full bg-tvh-blue/20 blur-3xl"></div>
+        </div>
       
 
       <div className="container mx-auto px-4 relative z-10 pt-16 md:pt-24">
-      <FlickeringGrid
-        className="z-0 absolute inset-0 size-full" 
-        squareSize={4}
-        gridGap={6}
-        color="#6B7280"
-        maxOpacity={0.5}
-        flickerChance={0.1}
-        height={550}
-        width={20000}
-      />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <motion.h1
@@ -67,8 +62,9 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className={`text-xl ${mutedTextColor} mb-8 max-w-xl`}
             >
-              South Africa's premier inter-university hackathon competition. Join hundreds of students for 53 hours of
-              coding, innovation, and fun!
+              South Africa's premier inter-university hackathon competition.
+              Join hundreds of students for 53 hours of coding, innovation, and
+              fun!
             </motion.p>
 
             <motion.div
@@ -76,9 +72,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 mb-8"
-            >
-              
-            </motion.div>
+            ></motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -104,37 +98,36 @@ export default function Hero() {
             className="relative"
           >
             <div className="relative h-[400px] w-full">
-            <ImagesSlider className="h-[420px] rounded-xl" images={images}>
-              <motion.div
-                initial={{
-                  opacity: 8,
-                  y: -80,
-                }}
-                animate={{
-                  opacity: 0,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.6,
-                }}
-                className="z-50 flex flex-col justify-center items-center"
-              >
-                
-                
-              </motion.div>
-            </ImagesSlider>
+              <ImagesSlider className="h-[420px] rounded-xl" images={images}>
+                <motion.div
+                  initial={{
+                    opacity: 8,
+                    y: -80,
+                  }}
+                  animate={{
+                    opacity: 0,
+                    y: 0,
+                  }}
+                  transition={{
+                    duration: 0.6,
+                  }}
+                  className="z-50 flex flex-col justify-center items-center"
+                ></motion.div>
+              </ImagesSlider>
             </div>
 
             {/* Floating elements */}
             <motion.div
               animate={{ y: [0, -15, 0] }}
-              transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+              transition={{
+                duration: 4,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
               className="absolute -top-10 right-10 bg-tvh-yellow/90 text-black font-bold py-2 px-4 rounded-lg shadow-lg"
             >
               52 Hours
             </motion.div>
-
-            
           </motion.div>
         </div>
 
@@ -144,10 +137,12 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-16 md:mt-24 text-center"
         >
-          <h2 className={`text-2xl font-bold mb-6 ${textColor}`}>Countdown to Hackathon</h2>
+          <h2 className={`text-2xl font-bold mb-6 ${textColor}`}>
+            Countdown to Hackathon
+          </h2>
           <CountdownTimer targetDate={hackathonDate} />
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
