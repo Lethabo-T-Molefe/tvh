@@ -3,9 +3,10 @@ import type { Metadata } from "next"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import BentoLayout from "./bento-layout"
 
 export const metadata: Metadata = {
-  title: "TVH Gallery | The Varsity Hackathon",
+  title: "TVH Gallery | Tshwane Varsity Hackathon",
   description: "Browse photos from TVH events from 2019 to 2024",
 }
 
