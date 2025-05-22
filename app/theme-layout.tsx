@@ -5,6 +5,7 @@ import "./globals.css"
 import ThemeAwareHeader from "@/components/layout/theme-aware-header"
 import ThemeAwareFooter from "@/components/layout/theme-aware-footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import seoKeywords from "@/lib/seoKeywords"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,9 +19,30 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "TVH - The Varsity Hackathon",
-  description: "South Africa's premier inter-university hackathon competition",
-}
+  title: {
+    default: seoKeywords.primaryKeywords[0],
+    template: `%s | ${seoKeywords.primaryKeywords[0]}`,
+  },
+  description: `${seoKeywords.longTailKeywords[0]}. ${seoKeywords.relatedTerms
+    .slice(0, 3)
+    .join(", ")}.`,
+  keywords: [
+    ...seoKeywords.primaryKeywords,
+    ...seoKeywords.locationBasedKeywords,
+  ],
+  openGraph: {
+    title: seoKeywords.primaryKeywords[1],
+    description: `Join ${seoKeywords.audienceSpecificKeywords[0]} in ${seoKeywords.locationBasedKeywords[0]}`,
+    type: "website",
+    locale: "en_ZA",
+    siteName: "Tshwane Varsity Hackathon",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: seoKeywords.primaryKeywords[2],
+    description: seoKeywords.longTailKeywords[1],
+  },
+};
 
 export default function ThemeLayout({
   children,
