@@ -45,37 +45,8 @@ export default function TeamMemberCard({ member, index, onClick }: TeamMemberCar
         <p className={`${mutedTextColor} mb-3`}>{member.title}</p>
 
         <div className="flex space-x-3">
-          {member.linkedin && (
-            <a
-              href={member.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-tvh-blue hover:text-tvh-blue/80 transition-colors"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Linkedin size={18} />
-            </a>
-          )}
-          {member.twitter && (
-            <a
-              href={member.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-tvh-blue hover:text-tvh-blue/80 transition-colors"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Twitter size={18} />
-            </a>
-          )}
-          {member.email && (
-            <a
-              href={`mailto:${member.email}`}
-              className="text-tvh-blue hover:text-tvh-blue/80 transition-colors"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Mail size={18} />
-            </a>
-          )}
+          
+          
         </div>
       </div>
     </motion.div>

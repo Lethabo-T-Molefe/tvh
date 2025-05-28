@@ -40,8 +40,8 @@ export default function FloatingParticles() {
         this.x = Math.random() * canvas.width
         this.y = Math.random() * canvas.height
         this.size = Math.random() * 3 + 1
-        this.speedX = Math.random() * 0.5 - 0.25
-        this.speedY = Math.random() * 0.5 - 0.25
+        this.speedX = Math.random() * 0.6
+        this.speedY = Math.random() * 0.6
 
         // Colors based on theme
         const darkColors = [
@@ -52,10 +52,10 @@ export default function FloatingParticles() {
         ]
 
         const lightColors = [
-          "rgba(230, 57, 70, 0.2)", // red
-          "rgba(69, 123, 157, 0.2)", // blue
-          "rgba(241, 196, 15, 0.2)", // yellow
-          "rgba(26, 26, 46, 0.1)", // dark blue/black
+          "rgba(230, 57, 70, 0.5)", // red
+          "rgba(69, 123, 157, 0.5)", // blue
+          "rgba(241, 196, 15, 0.5)", // yellow
+          "rgba(26, 26, 46, 0.5)", // dark blue/black
         ]
 
         const colors = theme === "dark" ? darkColors : lightColors
@@ -73,15 +73,15 @@ export default function FloatingParticles() {
         else if (this.y < 0) this.y = canvas.height
 
         // Mouse interaction
-        const dx = mousePosition.x - this.x
-        const dy = mousePosition.y - this.y
-        const distance = Math.sqrt(dx * dx + dy * dy)
+        // const dx = mousePosition.x - this.x
+        // const dy = mousePosition.y - this.y
+        // const distance = Math.sqrt(dx * dx + dy * dy)
 
-        if (distance < 100) {
-          const angle = Math.atan2(dy, dx)
-          this.x -= Math.cos(angle) * 1
-          this.y -= Math.sin(angle) * 1
-        }
+        // if (distance < 100) {
+        //   const angle = Math.atan2(dy, dx)
+        //   this.x -= Math.cos(angle) * 1
+        //   this.y -= Math.sin(angle) * 1
+        // }
       }
 
       draw() {
@@ -137,7 +137,7 @@ export default function FloatingParticles() {
     return () => {
       window.removeEventListener("resize", setCanvasDimensions)
     }
-  }, [mousePosition, theme])
+  }, [ theme])
 
   return <canvas ref={canvasRef} className="w-full h-full" />
 }
