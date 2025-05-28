@@ -42,13 +42,7 @@ export default function TeamMemberModal({ member, onClose }: TeamMemberModalProp
           <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-tvh-red/10 blur-3xl -z-10"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-tvh-blue/10 blur-3xl -z-10"></div>
 
-          {/* Close button */}
-          <button
-            className="absolute top-4 right-4 z-10 bg-black/20 text-white rounded-full p-2 hover:bg-black/40 transition-colors"
-            onClick={onClose}
-          >
-            <X size={20} />
-          </button>
+        
 
           <div className="overflow-y-auto max-h-[85vh] no-scrollbar">
             {/* Header with image and basic info */}
