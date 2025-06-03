@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
-import { useTheme } from "next-themes"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const menuItems = [
   { name: "Home", href: "/" },
@@ -19,81 +19,90 @@ const menuItems = [
   { name: "Sponsors", href: "/#sponsors" },
   { name: "FAQ", href: "/#faq" },
   { name: "Contact", href: "/#contact" },
-]
+];
 
 const Logo = () => {
-  const { theme } = useTheme()
-  const isDark = theme === "dark"
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
 
   return (
     <div className="relative h-10 w-auto">
       <Image
-        src={isDark ? "/tut_logo_light.png" : "/tut_logo_dark.png"}
+        src={isDark ? "/logo7.png" : "/logo7.png"}
         alt="TUT logo"
-        width={150}
-        height={40}
+        width={70}
+        height={50}
         className="h-10 w-auto object-contain"
       />
     </div>
-  )
-}
+  );
+};
 
 export default function Header() {
-  const [menuState, setMenuState] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const { theme } = useTheme()
-  const isDark = theme === "dark"
+  const [menuState, setMenuState] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      const nav = document.querySelector("nav")
+      const nav = document.querySelector("nav");
       if (nav && !nav.contains(event.target as Node) && menuState) {
-        setMenuState(false)
+        setMenuState(false);
       }
-    }
+    };
 
-    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [menuState])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuState]);
 
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
     if (menuState) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"
+      document.body.style.overflow = "auto";
     }
     return () => {
-      document.body.style.overflow = "auto"
-    }
-  }, [menuState])
+      document.body.style.overflow = "auto";
+    };
+  }, [menuState]);
 
   return (
     <header className="relative z-50">
-      <nav data-state={menuState ? "active" : ""} className="fixed z-50 w-full px-2 group">
+      <nav
+        data-state={menuState ? "active" : ""}
+        className="fixed z-50 w-full px-2 group"
+      >
         <div
           className={cn(
             "mx-auto mt-2 max-w-8xl px-6 transition-all duration-500 lg:px-12",
             isScrolled &&
-              `${isDark ? "bg-black/70" : "bg-white/90"} max-w-5xl rounded-2xl border ${
+              `${
+                isDark ? "bg-black/70" : "bg-white/90"
+              } max-w-7xl rounded-2xl border ${
                 isDark ? "border-white/10" : "border-gray-200"
-              } backdrop-blur-lg lg:px-5 shadow-lg`,
+              } backdrop-blur-lg lg:px-5 shadow-lg`
           )}
         >
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full justify-between lg:w-auto">
-              <Link href="/" aria-label="home" className="flex items-center space-x-2">
+              <Link
+                href="/"
+                aria-label="home"
+                className="flex items-center space-x-2"
+              >
                 <Logo />
               </Link>
 
@@ -103,10 +112,16 @@ export default function Header() {
                 className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
               >
                 <Menu
-                  className={`m-auto size-6 duration-400 ${menuState ? "rotate-180 scale-0 opacity-0" : ""} ${isDark ? "text-white" : "text-gray-900"}`}
+                  className={`m-auto size-6 duration-400 ${
+                    menuState ? "rotate-180 scale-0 opacity-0" : ""
+                  } ${isDark ? "text-white" : "text-gray-900"}`}
                 />
                 <X
-                  className={`absolute inset-0 m-auto size-6 duration-400 ${menuState ? "rotate-0 scale-100 opacity-100" : "-rotate-180 scale-0 opacity-0"} ${isDark ? "text-white" : "text-gray-900"}`}
+                  className={`absolute inset-0 m-auto size-6 duration-400 ${
+                    menuState
+                      ? "rotate-0 scale-100 opacity-100"
+                      : "-rotate-180 scale-0 opacity-0"
+                  } ${isDark ? "text-white" : "text-gray-900"}`}
                 />
               </button>
             </div>
@@ -119,7 +134,9 @@ export default function Header() {
                     <Link
                       href={item.href}
                       className={`${
-                        isDark ? "text-gray-200 hover:text-white" : "text-gray-700 hover:text-gray-900"
+                        isDark
+                          ? "text-gray-200 hover:text-white"
+                          : "text-gray-700 hover:text-gray-900"
                       } block py-2 px-1 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-tvh-red hover:after:w-full after:transition-all after:duration-300`}
                     >
                       <span>{item.name}</span>
@@ -136,8 +153,8 @@ export default function Header() {
               } lg:flex fixed inset-0 top-[73px] z-40 lg:static lg:inset-auto w-full flex-wrap items-center justify-end space-y-8 p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:w-fit lg:gap-6 lg:space-y-0 lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none`}
             >
               <div className="ml-2">
-                  <ThemeToggle />
-                </div>
+                <ThemeToggle />
+              </div>
               <div className="lg:hidden">
                 <ul className="space-y-6 text-base font-medium">
                   {menuItems.map((item, index) => (
@@ -146,17 +163,17 @@ export default function Header() {
                         href={item.href}
                         onClick={() => setMenuState(false)}
                         className={`${
-                          isDark ? "text-gray-200 hover:text-white" : "text-gray-700 hover:text-gray-900"
+                          isDark
+                            ? "text-gray-200 hover:text-white"
+                            : "text-gray-700 hover:text-gray-900"
                         } block py-2 transition-colors duration-200`}
                       >
                         <span>{item.name}</span>
                       </Link>
                     </li>
                   ))}
-                  
                 </ul>
               </div>
-              
             </div>
           </div>
         </div>
@@ -170,5 +187,5 @@ export default function Header() {
         />
       )}
     </header>
-  )
+  );
 }

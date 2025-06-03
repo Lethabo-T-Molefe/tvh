@@ -27,16 +27,16 @@ const Logo = () => {
   const isDark = theme === "dark"
 
   return (
-    <div className="relative h-10 w-auto">
+    <div className="relative h-10 w-auto mb-6">
       <Image
-        src={isDark ? "/tut_logo_light.png" : "/tut_logo_dark.png"}
+        src="/assets/img/clients/logo2.png" 
         alt="TUT logo"
         width={150}
-        height={50}
-        className="h-10 w-auto object-contain"
+        height={120}
+        className="h-20 w-auto object-contain"
       />
     </div>
-  )
+  );
 }
 
   return (
@@ -59,7 +59,7 @@ const Logo = () => {
             className="col-span-1 md:col-span-1"
           >
             <div className="flex items-center mb-4">
-              <div className="relative h-150 w-auto mr-2">
+              <div className="relative h-150 w-120 mr-2">
                 <Logo />
               </div>
             </div>

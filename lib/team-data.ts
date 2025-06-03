@@ -69,7 +69,7 @@ export const teamData: TeamMember[] = [
     name: "Dibuseng Modise",
     title: "2nd Vice Chief Organizer",
     department: "Executive Organizing Team",
-    image: "/assets/img/team/tba.jpg",
+    image: "/assets/img/team/modise.jpg",
     bio: [
       "Priya leads TVH's partnerships and sponsorship efforts, building relationships with companies, universities, and organizations that support the hackathon's mission. She joined the leadership team in 2021 after successfully securing major sponsorships as a volunteer.",
       "With a background in marketing and business development, Priya has helped TVH establish partnerships with some of South Africa's leading tech companies and educational institutions. Her strategic approach to partnership development has been instrumental in expanding the resources and opportunities available to hackathon participants.",
@@ -138,7 +138,7 @@ export const teamData: TeamMember[] = [
     name: "Rhulani Salani",
     title: "Registrar",
     department: "Executive Committee Team",
-    image: "/assets/img/team/rhulani.jpg",
+    image: "/assets/img/team/salani.jpeg",
     bio: [
       "Meet Rhulani Carlet Salani, an accomplished Information Technology graduate from Tshwane University of Technology, where I now have the privilege of lecturing on Networking and Computing Fundamentals.",
       "My journey in the tech world has been nothing short of exciting. Armed with a Postgraduate Diploma in Informatics, I've further honed my skills by becoming a certified AWS Cloud Practitioner and a certified AWS Solutions Architect. Currently, I'm embarking on a journey towards a Master's degree in Informatics and gaining certification in Cybersecurity.",
@@ -205,7 +205,7 @@ export const teamData: TeamMember[] = [
     name: "Pearlsy Phoku",
     title: "Admin",
     department: "Organizing Team",
-    image: "/assets/img/team/pearlsy.jpeg",
+    image: "/assets/img/team/pearlsy.jpg",
     bio: [
       "Pearlsy is an Admin in TVH structure, Has a Postgraduate Diploma in Administrative Information Management and currently in pursuit of a Masters Degree in Organisational Leadership. Her aim is to optimize the workflows and operational effeciency in TVH success.",
     ],
@@ -355,7 +355,7 @@ export const teamData: TeamMember[] = [
     name: "Moeketsi Kema",
     title: "Workshops & Webinar",
     department: "Organizing Team",
-    image: "/assets/img/team/tba.jpg",
+    image: "/assets/img/team/kema.jpg",
     bio: [
       "I am Moeketsi Kema, a dedicated and passionate individual who is always eager to learn new things. I give my all and more in everything that is required of me.",
     ],
@@ -475,7 +475,7 @@ export const teamData: TeamMember[] = [
     name: "Matthews Mfati",
     title: "Logistics:Distribution & Tracking",
     department: "Organizing Team",
-    image: "/assets/img/team/matthews.jpeg",
+    image: "/assets/img/team/matthews.jpg",
     bio: [
       "A Postgraduate student at TUT FoICT, First Years & Foundation Unit Programming Lecturer. TUT 2018 and 2019 Kasi Hackathon Lead Team"
     ],
