@@ -85,12 +85,7 @@ const Logo = () => {
               >
                 <Facebook size={20} />
               </Link>
-              <Link
-                href="#"
-                className={`${mutedTextColor} hover:text-tvh-red transition-colors`}
-              >
-                <Linkedin size={20} />
-              </Link>
+              
             </div>
           </motion.div>
 
