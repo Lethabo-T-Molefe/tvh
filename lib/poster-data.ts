@@ -15,12 +15,4 @@ export const posterList = [
       "/assets/img/Posts/tvh-launch2025.png",
     category: "Challenge",
   },
-  {
-    id: 3,
-    title: "TVH Design Thinking",
-    description: "Join us for a workshop on Design Thinking, where you'll learn how to approach problem-solving with a user-centered mindset.",
-    imageUrl:
-      "/assets/img/Posts/tvhdesignthinking2025.jpg",
-    category: "Workshop",
-  },
 ];
