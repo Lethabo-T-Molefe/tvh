@@ -7,6 +7,7 @@ import FAQ from "@/components/sections/faq"
 import Contact from "@/components/sections/contact"
 import Announcements from "@/components/sections/announcements"
 import PostersSection from "@/components/sections/posters"
+import Themes from "@/components/sections/themes"
 import FloatingParticles from "@/components/ui/floating-particles"
 import { FlickeringGrid } from "@/components/ui/flickering-grid"
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision"
@@ -23,6 +24,7 @@ export default function Home() {
         <About />
         <Announcements />
         <PostersSection />
+        <Themes/>
         <Timeline />
         <Sponsors />
         <FAQ />
