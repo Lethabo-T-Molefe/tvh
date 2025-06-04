@@ -330,23 +330,7 @@ export default function Themes() {
           </Card>
         </motion.div>
 
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <div
-            className={`inline-flex items-center gap-4 px-6 py-3 ${cardBg} backdrop-blur-sm rounded-full shadow-lg border ${cardBorder}`}
-          >
-            <span className={mutedTextColor}>Ready to make an impact?</span>
-            <Badge className="bg-gradient-to-r from-tvh-red to-tvh-blue text-white">
-              Register Now
-            </Badge>
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   );
