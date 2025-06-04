@@ -11,7 +11,7 @@ export default function GalleryHeader() {
   const isDark = theme === "dark"
   const [activeYear, setActiveYear] = useState<string>("all")
 
-  const years = ["all", "2024", "2023", "2022", "2021", "2020", "2019"]
+  const years = ["all","2025", "2024", "2023", "2022", "2021", "2020", "2019"]
 
   const textColor = isDark ? "text-white" : "text-gray-900"
   const mutedTextColor = isDark ? "text-gray-300" : "text-gray-600"

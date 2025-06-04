@@ -15,7 +15,7 @@ export default function GalleryGrid() {
   const [filteredImages, setFilteredImages] = useState(galleryData)
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
-  const years = ["all", "2024", "2023", "2022", "2021", "2020", "2019"]
+  const years = ["all", "2025", "2024", "2023", "2022", "2021", "2020", "2019"]
 
   useEffect(() => {
     if (activeYear === "all") {
