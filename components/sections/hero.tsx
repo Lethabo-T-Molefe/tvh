@@ -24,11 +24,12 @@ export default function Hero() {
   const mutedTextColor = isDark ? "text-gray-300" : "text-gray-600"
 
   const images = [
-      "/assets/img/portfolio/23_18.png",
-      "/assets/img/portfolio/22_1.jpg",
-      "/assets/img/portfolio/19_5.jpg",
-      "/assets/img/portfolio/tvh7.jpg"
-   ];
+    "/assets/img/gallery/2025/11.jpg",
+    "/assets/img/gallery/2024/7.jpg",
+    "/assets/img/portfolio/22_1.jpg",
+    "/assets/img/portfolio/19_5.jpg",
+    "/assets/img/gallery/IMG_0135.jpg",
+  ];
 
   return (
     <section id="home" className="min-h-screen pt-20 relative overflow-hidden">

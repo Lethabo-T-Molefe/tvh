@@ -161,7 +161,7 @@ export default function Sponsors() {
                     viewport={{ once: true }}
                     className={`p-6 rounded-xl flex items-center justify-center group transition-all ${
                       isDark
-                        ? "bg-black/50 backdrop-blur-sm border border-white/10 hover:border-white/30"
+                        ? "bg-white shadow-md border border-gray-100 hover:border-gray-300"
                         : "bg-white shadow-md border border-gray-100 hover:border-gray-300"
                     }`}
                   >
