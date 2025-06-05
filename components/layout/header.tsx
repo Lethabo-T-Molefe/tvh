@@ -317,7 +317,7 @@ export default function Header() {
               <ul className="space-y-2">
                 {menuItems.map((item, index) => (
                   <li key={index}>
-                    <Link
+                    <a
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                       className={cn(
@@ -333,7 +333,7 @@ export default function Header() {
                       {isActive(item.href) && (
                         <span className="ml-auto w-1.5 h-1.5 rounded-full bg-tvh-red"></span>
                       )}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
