@@ -24,7 +24,7 @@ export const galleryData: GalleryImage[] = [
     title: "Pre-Pandemic Kickoff",
     description: "The last in-person event before COVID-19 restrictions",
     year: "2025",
-    image: "../assets/img/Gallery/2025/1.jpg",
+    image: "../assets/img/Gallery/2025/1.webp",
     category: "ceremony",
   },
   {
@@ -32,7 +32,7 @@ export const galleryData: GalleryImage[] = [
     title: "Intensive Coding",
     description: "Participants focused on coding their solutions",
     year: "2025",
-    image: "../assets/img/Gallery/2025/2.jpg",
+    image: "../assets/img/Gallery/2025/2.webp",
     category: "hacking",
   },
   {
@@ -40,7 +40,7 @@ export const galleryData: GalleryImage[] = [
     title: "Team Discussions",
     description: "Teams discussing project architecture and implementation",
     year: "2025",
-    image: "../assets/img/Gallery/2025/3.jpg",
+    image: "../assets/img/Gallery/2025/3.webp",
     category: "teams",
   },
   {
@@ -48,7 +48,7 @@ export const galleryData: GalleryImage[] = [
     title: "Inaugural TVH",
     description: "The very first TVH event in South Africa",
     year: "2025",
-    image: "../assets/img/Gallery/2025/4.jpg",
+    image: "../assets/img/Gallery/2025/4.webp",
     category: "ceremony",
   },
   {
@@ -56,7 +56,7 @@ export const galleryData: GalleryImage[] = [
     title: "First Hackathon Teams",
     description: "The pioneering teams of the first TVH",
     year: "2025",
-    image: "../assets/img/Gallery/2025/5.jpg",
+    image: "../assets/img/Gallery/2025/5.webp",
     category: "teams",
   },
   {
@@ -64,7 +64,7 @@ export const galleryData: GalleryImage[] = [
     title: "Innovation Showcase",
     description: "The first batch of innovative projects from TVH",
     year: "2025",
-    image: "../assets/img/Gallery/2025/6.jpg",
+    image: "../assets/img/Gallery/2025/6.webp",
     category: "presentations",
   },
   {
@@ -72,7 +72,7 @@ export const galleryData: GalleryImage[] = [
     title: "Closing Ceremony",
     description: "Celebrating the success of the first TVH",
     year: "2025",
-    image: "../assets/img/Gallery/2025/7.jpg",
+    image: "../assets/img/Gallery/2025/7.webp",
     category: "ceremony",
   },
   {
@@ -80,7 +80,7 @@ export const galleryData: GalleryImage[] = [
     title: "Closing Ceremony",
     description: "Celebrating the success of the first TVH",
     year: "2025",
-    image: "../assets/img/Gallery/2025/8.jpg",
+    image: "../assets/img/Gallery/2025/8.webp",
     category: "ceremony",
   },
   {
@@ -88,7 +88,7 @@ export const galleryData: GalleryImage[] = [
     title: "Closing Ceremony",
     description: "Celebrating the success of the first TVH",
     year: "2025",
-    image: "../assets/img/Gallery/2025/9.jpg",
+    image: "../assets/img/Gallery/2025/9.webp",
     category: "ceremony",
   },
   {
@@ -96,7 +96,7 @@ export const galleryData: GalleryImage[] = [
     title: "Closing Ceremony",
     description: "Celebrating the success of the first TVH",
     year: "2025",
-    image: "../assets/img/Gallery/2025/10.jpg",
+    image: "../assets/img/Gallery/2025/10.webp",
     category: "ceremony",
   },
   {
@@ -104,7 +104,7 @@ export const galleryData: GalleryImage[] = [
     title: "Closing Ceremony",
     description: "Celebrating the success of the first TVH",
     year: "2025",
-    image: "../assets/img/Gallery/2025/11.jpg",
+    image: "../assets/img/Gallery/2025/11.webp",
     category: "ceremony",
   },
   {
@@ -112,7 +112,7 @@ export const galleryData: GalleryImage[] = [
     title: "Closing Ceremony",
     description: "Celebrating the success of the first TVH",
     year: "2025",
-    image: "../assets/img/Gallery/2025/7.jpg",
+    image: "../assets/img/Gallery/2025/7.webp",
     category: "ceremony",
   },
   // 2024 Images
@@ -122,7 +122,7 @@ export const galleryData: GalleryImage[] = [
     description:
       "The grand opening of TVH 2024 with university representatives and sponsors",
     year: "2024",
-    image: "/assets/img/gallery/IMG_0121.jpg",
+    image: "/assets/img/gallery/IMG_0121.webp",
     category: "ceremony",
   },
   {
@@ -131,7 +131,7 @@ export const galleryData: GalleryImage[] = [
     description:
       "Students deep in concentration during the 48-hour coding marathon",
     year: "2018",
-    image: "/assets/img/portfolio/18_6.jpg",
+    image: "/assets/img/portfolio/18_6.webp",
     category: "hacking",
   },
   {
@@ -139,7 +139,7 @@ export const galleryData: GalleryImage[] = [
     title: "Team Collaboration",
     description: "Teams working together to solve complex problems",
     year: "2019",
-    image: "/assets/img/portfolio/19_1.jpg",
+    image: "/assets/img/portfolio/19_1.webp",
     category: "teams",
   },
   {
@@ -147,7 +147,7 @@ export const galleryData: GalleryImage[] = [
     title: "Workshop Session",
     description: "Integration workshop led by industry experts",
     year: "2019",
-    image: "/assets/img/portfolio/19_4.jpg",
+    image: "/assets/img/portfolio/19_4.webp",
     category: "workshops",
   },
   {
@@ -155,7 +155,7 @@ export const galleryData: GalleryImage[] = [
     title: "Project Presentations",
     description: "Teams presenting their final projects to the judges",
     year: "2024",
-    image: "/assets/img/gallery/IMG_9990.jpg",
+    image: "/assets/img/gallery/IMG_9990.webp",
     category: "presentations",
   },
   {
@@ -163,7 +163,7 @@ export const galleryData: GalleryImage[] = [
     title: "Award Ceremony",
     description: "Celebrating the winners of TVH 2024",
     year: "2019",
-    image: "/assets/img/portfolio/19_5.jpg",
+    image: "/assets/img/portfolio/19_5.webp",
     category: "ceremony",
   },
 
@@ -173,7 +173,7 @@ export const galleryData: GalleryImage[] = [
     title: "Opening Day 2023",
     description: "Participants gathering for the kickoff of TVH 2023",
     year: "2023",
-    image: "/assets/img/portfolio/23_19.png",
+    image: "/assets/img/portfolio/23_19.webp",
     category: "ceremony",
   },
   {
@@ -181,7 +181,7 @@ export const galleryData: GalleryImage[] = [
     title: "Midnight Coding",
     description: "Late night coding sessions during the hackathon",
     year: "2023",
-    image: "/assets/img/portfolio/tvh8.jpg",
+    image: "/assets/img/portfolio/tvh8.webp",
     category: "hacking",
   },
   {
@@ -189,7 +189,7 @@ export const galleryData: GalleryImage[] = [
     title: "Mentorship Session",
     description: "Industry mentors providing guidance to participants",
     year: "2023",
-    image: "/assets/img/portfolio/5.jpg",
+    image: "/assets/img/portfolio/5.webp",
     category: "workshops",
   },
   {
@@ -197,7 +197,7 @@ export const galleryData: GalleryImage[] = [
     title: "Team Brainstorming",
     description: "Creative ideation session among team members",
     year: "2023",
-    image: "/assets/img/slide/s4.jpg",
+    image: "/assets/img/slide/s4.webp",
     category: "teams",
   },
   {
@@ -205,7 +205,7 @@ export const galleryData: GalleryImage[] = [
     title: "Final Demos",
     description: "Teams demonstrating their projects to the audience",
     year: "2023",
-    image: "/assets/img/portfolio/tvh5.jpg",
+    image: "/assets/img/portfolio/tvh5.webp",
     category: "presentations",
   },
 
@@ -215,7 +215,7 @@ export const galleryData: GalleryImage[] = [
     title: "Award Ceremony",
     description: "Celebrating the achievements of TVH 2024 participants",
     year: "2024",
-    image: "/assets/img/Gallery/2024/1.jpg",
+    image: "/assets/img/Gallery/2024/1.webp",
     category: "ceremony",
   },
   {
@@ -223,7 +223,7 @@ export const galleryData: GalleryImage[] = [
     title: "Collaborative Coding",
     description: "Students working together on complex coding challenges",
     year: "2024",
-    image: "/assets/img/Gallery/2024/2.jpg",
+    image: "/assets/img/Gallery/2024/2.webp",
     category: "hacking",
   },
   {
@@ -231,7 +231,7 @@ export const galleryData: GalleryImage[] = [
     title: "",
     description: "",
     year: "2024",
-    image: "/assets/img/Gallery/2024/3.jpg",
+    image: "/assets/img/Gallery/2024/3.webp",
     category: "workshops",
   },
   {
@@ -239,7 +239,7 @@ export const galleryData: GalleryImage[] = [
     title: "",
     description: "",
     year: "2024",
-    image: "/assets/img/Gallery/2024/4.jpg",
+    image: "/assets/img/Gallery/2024/4.webp",
     category: "presentations",
   },
 
@@ -249,7 +249,7 @@ export const galleryData: GalleryImage[] = [
     title: "",
     description: "",
     year: "2024",
-    image: "/assets/img/Gallery/2024/5.jpg",
+    image: "/assets/img/Gallery/2024/5.webp",
     category: "ceremony",
   },
   {
@@ -257,7 +257,7 @@ export const galleryData: GalleryImage[] = [
     title: "Collaboration",
     description: "Teams collaborating during the hackathon",
     year: "2024",
-    image: "/assets/img/Gallery/2024/6.jpg",
+    image: "/assets/img/Gallery/2024/6.webp",
     category: "teams",
   },
   {
@@ -265,7 +265,7 @@ export const galleryData: GalleryImage[] = [
     title: "",
     description: "",
     year: "2024",
-    image: "/assets/img/Gallery/2024/7.jpg",
+    image: "/assets/img/Gallery/2024/7.webp",
     category: "workshops",
   },
   {
@@ -273,7 +273,7 @@ export const galleryData: GalleryImage[] = [
     title: "",
     description: "",
     year: "2024",
-    image: "/assets/img/Gallery/2024/8.jpg",
+    image: "/assets/img/Gallery/2024/8.webp",
     category: "presentations",
   },
 
