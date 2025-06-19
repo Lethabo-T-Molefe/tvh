@@ -339,35 +339,6 @@ export default function Header() {
               </ul>
             </nav>
 
-            {/* Mobile Menu Footer */}
-            <div className="p-4 border-t border-gray-200 dark:border-gray-700">
-              <div className="flex flex-col space-y-3">
-                <Button
-                  asChild
-                  variant="outline"
-                  size="sm"
-                  className={cn(
-                    "w-full justify-center",
-                    isDark
-                      ? "border-white/20 text-white hover:bg-white/10"
-                      : "border-gray-300 text-gray-900 hover:bg-gray-100"
-                  )}
-                >
-                  <Link href="#" onClick={closeMenu}>
-                    <span>Login</span>
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  size="sm"
-                  className="w-full justify-center bg-tvh-red hover:bg-tvh-red/80 text-white"
-                >
-                  <Link href="#" onClick={closeMenu}>
-                    <span>Sign Up</span>
-                  </Link>
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       </nav>
