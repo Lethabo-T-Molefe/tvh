@@ -1,23 +1,25 @@
-import {assets} from "./assets"
+import { assets } from "./assets";
 
 export interface TeamMember {
-  id: string
-  name: string
-  title: string
-  department: string
-  image: string
-  bio: string[]
-  email?: string
-  linkedin?: string
-  twitter?: string
-  website?: string
-  location?: string
-  skills?: string[]
+  id: string;
+  name: string;
+  title: string;
+  department: string;
+  image: string;
+  bio: string[];
+  email?: string;
+  linkedin?: string;
+  twitter?: string;
+  website?: string;
+  location?: string;
+  skills?: string[];
 }
 
 // Helper function to generate placeholder image URLs with specific dimensions
 function getPlaceholderImage(name: string): string {
-  return `/placeholder.svg?height=400&width=400&text=${encodeURIComponent(name.replace(" ", "+"))}`
+  return `/placeholder.svg?height=400&width=400&text=${encodeURIComponent(
+    name.replace(" ", "+")
+  )}`;
 }
 
 export const teamData: TeamMember[] = [
@@ -164,7 +166,7 @@ export const teamData: TeamMember[] = [
     department: "Executive Committee Team",
     image: "/assets/img/team/moepi.webp",
     bio: [
-        "Masters Degree in Information Technology, Hardware and Network Security. Lecturer and Technologist.",
+      "Masters Degree in Information Technology, Hardware and Network Security. Lecturer and Technologist.",
     ],
     email: "fatima@tvh.co.za",
     linkedin: "https://linkedin.com/in/fatimaahmed",
@@ -214,8 +216,7 @@ export const teamData: TeamMember[] = [
     twitter: "https://twitter.com/zoemokoena",
     website: "https://zoemokoena.com",
     location: "Cape Town, South Africa",
-    skills: [
-    ],
+    skills: [],
   },
   {
     id: "member-10",
@@ -226,7 +227,7 @@ export const teamData: TeamMember[] = [
     bio: [
       "Refiloe Mthethwa, a dedicated and proactive student leader at Tshwane University of Technology's Soshanguve South Campus, is currently pursuing a diploma in informatics. With an unwavering passion for harnessing the potential of technology to foster positive change. She has played integral roles in:",
       "• Former HC Informatics Chairperson 2021/22\n• Former ICT SFC Secretary 2022/23\n• Former CSRC Deputy Secretary 2023/24",
-      "Currently working under the ICT Marketing Department and Girls In Tech Ambassador."
+      "Currently working under the ICT Marketing Department and Girls In Tech Ambassador.",
     ],
     email: "jamal@tvh.co.za",
     linkedin: "https://linkedin.com/in/jamalibrahim",
@@ -337,7 +338,7 @@ export const teamData: TeamMember[] = [
       "Mr. Masedi Mankwenkwe Matlala is a seasoned South African professional specializing in Information and Communication Technology (ICT), project management, and entrepreneurship. With a strong foundation in ICT, he has successfully led numerous projects, demonstrating his proficiency in managing complex technological initiatives.​​",
       "Currently, Mr. Matlala serves as a part-time lecturer at the Tshwane University of Technology (TUT), where he imparts his extensive knowledge and experience to students in the Faculty of Information and Communication Technology. His role in academia reflects his unwavering commitment to education and the development of future ICT professionals.​​",
       "Beyond his academic and professional endeavors, Mr. Matlala is deeply passionate about skills transfer and capacity building. He actively engages in initiatives aimed at empowering individuals with the necessary skills to thrive in the ever-evolving technological landscape. His dedication to mentorship and knowledge sharing underscores his belief in the transformative power of education and continuous learning.",
-      "As an entrepreneur, Mr. Matlala leverages his ICT and project management expertise to drive innovation and strategic growth in various ventures. His ability to integrate technical proficiency with business acumen positions him as a dynamic leader capable of navigating the complexities of the modern digital economy."
+      "As an entrepreneur, Mr. Matlala leverages his ICT and project management expertise to drive innovation and strategic growth in various ventures. His ability to integrate technical proficiency with business acumen positions him as a dynamic leader capable of navigating the complexities of the modern digital economy.",
     ],
     email: "anele@tvh.co.za",
     linkedin: "https://linkedin.com/in/anelezwane",
@@ -377,7 +378,7 @@ export const teamData: TeamMember[] = [
     department: "Organizing Team",
     image: "/assets/img/team/twala.webp",
     bio: [
-      "I am a master's candidate in Information Technology with a strong foundation in networking and security. A lecturer in first year and foundation unit. I am currently deepening my expertise in cloud computing and AI."
+      "I am a master's candidate in Information Technology with a strong foundation in networking and security. A lecturer in first year and foundation unit. I am currently deepening my expertise in cloud computing and AI.",
     ],
     email: "anele@tvh.co.za",
     linkedin: "https://linkedin.com/in/anelezwane",
@@ -397,7 +398,7 @@ export const teamData: TeamMember[] = [
     department: "Organizing Team",
     image: "/assets/img/team/nkosinathi.webp",
     bio: [
-      "Nkosinathi Dladla is an Associate Consultant at IQbusiness with a strong background in project management, business analysis, and data processing. He holds a Postgraduate Diploma in Management from Wits Business School and a Bachelor of Arts in International Relations and Politics from the University of the Witwatersrand. Nkosinathi is known for his critical and analytical thinking skills, which enable him to solve complex problems and create long-term strategies. He has experience working on various high-impact projects, including AML and IT PMO. In addition to his professional work, Nkosinathi is passionate about mentoring and coaching, particularly in supporting and preparing young talent for the workplace."
+      "Nkosinathi Dladla is an Associate Consultant at IQbusiness with a strong background in project management, business analysis, and data processing. He holds a Postgraduate Diploma in Management from Wits Business School and a Bachelor of Arts in International Relations and Politics from the University of the Witwatersrand. Nkosinathi is known for his critical and analytical thinking skills, which enable him to solve complex problems and create long-term strategies. He has experience working on various high-impact projects, including AML and IT PMO. In addition to his professional work, Nkosinathi is passionate about mentoring and coaching, particularly in supporting and preparing young talent for the workplace.",
     ],
     email: "anele@tvh.co.za",
     linkedin: "https://linkedin.com/in/anelezwane",
@@ -417,7 +418,7 @@ export const teamData: TeamMember[] = [
     department: "Organizing Team",
     image: "/assets/img/team/Phenyo.webp",
     bio: [
-       "Phenyo is an Associate Multi-Disciplinary Consultant at IQbusiness with a rich background in both the higher education and financial services sectors. His expertise spans market and economic research, community engagement, and effective project delivery. Phenyo’s attention to detail, analytical skills, and commitment to task completion make him a valuable asset in any professional setting."
+      "Phenyo is an Associate Multi-Disciplinary Consultant at IQbusiness with a rich background in both the higher education and financial services sectors. His expertise spans market and economic research, community engagement, and effective project delivery. Phenyo’s attention to detail, analytical skills, and commitment to task completion make him a valuable asset in any professional setting.",
     ],
     email: "anele@tvh.co.za",
     linkedin: "https://linkedin.com/in/anelezwane",
@@ -437,7 +438,7 @@ export const teamData: TeamMember[] = [
     department: "Organizing Team",
     image: "/assets/img/team/tba.webp",
     bio: [
-      "I am Pracious Mahlangu, a dedicated and passionate individual who is always eager to learn new things. I give my all and more in everything that is required of me."
+      "I am Pracious Mahlangu, a dedicated and passionate individual who is always eager to learn new things. I give my all and more in everything that is required of me.",
     ],
     email: "anele@tvh.co.za",
     linkedin: "https://linkedin.com/in/anelezwane",
@@ -457,7 +458,7 @@ export const teamData: TeamMember[] = [
     department: "Organizing Team",
     image: "/assets/img/team/dipono.webp",
     bio: [
-      "Dipono Manasoe, completed my national diploma at TUT, did my internship at ICEP from there I went to different companies to gain more experience and acquire more skills. Now am software developer lead team at ICEP, and doing Adv Diploma."
+      "Dipono Manasoe, completed my national diploma at TUT, did my internship at ICEP from there I went to different companies to gain more experience and acquire more skills. Now am software developer lead team at ICEP, and doing Adv Diploma.",
     ],
     email: "anele@tvh.co.za",
     linkedin: "https://linkedin.com/in/anelezwane",
@@ -477,7 +478,7 @@ export const teamData: TeamMember[] = [
     department: "Organizing Team",
     image: "/assets/img/team/matthews.webp",
     bio: [
-      "A Postgraduate student at TUT FoICT, First Years & Foundation Unit Programming Lecturer. TUT 2018 and 2019 Kasi Hackathon Lead Team"
+      "A Postgraduate student at TUT FoICT, First Years & Foundation Unit Programming Lecturer. TUT 2018 and 2019 Kasi Hackathon Lead Team",
     ],
     email: "anele@tvh.co.za",
     linkedin: "https://linkedin.com/in/anelezwane",
@@ -548,6 +549,27 @@ export const teamData: TeamMember[] = [
       "Team Coordination",
       "Scheduling",
       "Community Building",
+    ],
+  },
+  {
+    id: "member-26",
+    name: "Lethabo Molefe",
+    title: "DevOps",
+    department: "Organizing Team",
+    image: "/assets/img/team/tba.webp",
+    bio: [
+      "Lethabo Tshegofatso Molefe is a DevOps enthusiast and software developer with a passion for building reliable, scalable systems that create real-world impact. He is currently pursuing an Advanced Diploma in Computer Science at Tshwane University of Technology, where he blends academic learning with practical experience in cloud infrastructure, automation, and backend development.",
+      "In his role on the TVH Organising Team, Lethabo focuses on ensuring the platform runs efficiently and securely — handling tasks such as CI/CD setup, deployment automation, and system optimization. He is deeply driven by innovation and collaboration, and believes in using technology as a tool to empower and inspire.",
+    ],
+    email: "anele@tvh.co.za",
+    linkedin: "https://linkedin.com/in/anelezwane",
+    location: "Tshwane, South Africa",
+    skills: [
+      "Cloud Infrastructure",
+      "Automation",
+      "Backend Development",
+      "CI/CD Pipelines",
+      "Scalable Systems",
     ],
   },
 ];
