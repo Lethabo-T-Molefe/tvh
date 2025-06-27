@@ -476,7 +476,7 @@ export const teamData: TeamMember[] = [
     name: "Matthews Mfati",
     title: "Logistics:Distribution & Tracking",
     department: "Organizing Team",
-    image: "/assets/img/team/matthews.webp",
+    image: "/assets/img/team/matthews_1.webp",
     bio: [
       "A Postgraduate student at TUT FoICT, First Years & Foundation Unit Programming Lecturer. TUT 2018 and 2019 Kasi Hackathon Lead Team",
     ],
@@ -556,7 +556,7 @@ export const teamData: TeamMember[] = [
     name: "Lethabo Molefe",
     title: "DevOps",
     department: "Organizing Team",
-    image: "/assets/img/team/tba.webp",
+    image: "/assets/img/team/lethabo.webp",
     bio: [
       "Lethabo Tshegofatso Molefe is a DevOps enthusiast and software developer with a passion for building reliable, scalable systems that create real-world impact. He is currently pursuing an Advanced Diploma in Computer Science at Tshwane University of Technology, where he blends academic learning with practical experience in cloud infrastructure, automation, and backend development.",
       "In his role on the TVH Organising Team, Lethabo focuses on ensuring the platform runs efficiently and securely — handling tasks such as CI/CD setup, deployment automation, and system optimization. He is deeply driven by innovation and collaboration, and believes in using technology as a tool to empower and inspire.",
