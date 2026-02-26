@@ -1,43 +1,45 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { assets } from "@/lib/assets"
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
-import { useTheme } from "next-themes"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { assets } from "@/lib/assets";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { useTheme } from "next-themes";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
-  const { theme } = useTheme()
-  const isDark = theme === "dark"
+  const currentYear = new Date().getFullYear();
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
 
-  const bgColor = isDark ? "bg-black" : "bg-gray-50"
-  const textColor = isDark ? "text-white" : "text-gray-900"
-  const mutedTextColor = isDark ? "text-gray-400" : "text-gray-600"
-  const borderColor = isDark ? "border-gray-800" : "border-gray-200"
-  const hoverColor = "hover:text-tvh-red"
-  const cardBg = isDark ? "bg-black/50" : "bg-white/70"
-  const cardBorder = isDark ? "border-white/10" : "border-gray-200"
-  const cardHoverBorder = isDark ? "hover:border-white/30" : "hover:border-gray-300"
-  const iconBg = isDark ? "bg-black/70" : "bg-gray-100"
+  const bgColor = isDark ? "bg-black" : "bg-gray-50";
+  const textColor = isDark ? "text-white" : "text-gray-900";
+  const mutedTextColor = isDark ? "text-gray-400" : "text-gray-600";
+  const borderColor = isDark ? "border-gray-800" : "border-gray-200";
+  const hoverColor = "hover:text-tvh-red";
+  const cardBg = isDark ? "bg-black/50" : "bg-white/70";
+  const cardBorder = isDark ? "border-white/10" : "border-gray-200";
+  const cardHoverBorder = isDark
+    ? "hover:border-white/30"
+    : "hover:border-gray-300";
+  const iconBg = isDark ? "bg-black/70" : "bg-gray-100";
 
-const Logo = () => {
-  const { theme } = useTheme()
-  const isDark = theme === "dark"
+  const Logo = () => {
+    const { theme } = useTheme();
+    const isDark = theme === "dark";
 
-  return (
-    <div className="relative h-10 w-auto mb-6">
-      <Image
-        src="/assets/img/clients/logo2.png" 
-        alt="TUT logo"
-        width={150}
-        height={120}
-        className="h-20 w-auto object-contain"
-      />
-    </div>
-  );
-}
+    return (
+      <div className="relative h-10 w-auto mb-6">
+        <Image
+          src="/assets/img/clients/logo2.png"
+          alt="TUT logo"
+          width={150}
+          height={120}
+          className="h-20 w-auto object-contain"
+        />
+      </div>
+    );
+  };
 
   return (
     <footer
@@ -85,7 +87,6 @@ const Logo = () => {
               >
                 <Facebook size={20} />
               </Link>
-              
             </div>
           </motion.div>
 

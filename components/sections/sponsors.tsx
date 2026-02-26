@@ -22,6 +22,10 @@ export default function Sponsors() {
           name: "nelekat",
           logo: "https://tvh.icep.co.za/assets/img/clients/nele.png",
         },
+        {
+          name: "CXIA",
+          logo: "https://hosting.renderforestsites.com/13279450/601034/media/4807bfd8c733b667b1aea0b1f88951d8.png",
+        },
       ],
     },
     {
